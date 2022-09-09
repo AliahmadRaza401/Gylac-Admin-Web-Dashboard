@@ -1,0 +1,467 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|x64">
+      <Configuration>Profile</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{550EB4C7-EF4D-3F68-9913-DDD0278FCCD5}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <Platform>x64</Platform>
+    <ProjectName>flutter_assemble</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\workspace1\Gyalic_Dashboard-main\build\windows\CMakeFiles\e554d279e7cc0e323e888bebd25470d3\flutter_windows.dll.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_windows.dll, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_export.h, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_windows.h, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_messenger.h, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_plugin_registrar.h, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_texture_registrar.h, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/cpp_client_wrapper/core_implementations.cc, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/cpp_client_wrapper/standard_codec.cc, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/cpp_client_wrapper/plugin_registrar.cc, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/cpp_client_wrapper/flutter_engine.cc, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/cpp_client_wrapper/flutter_view_controller.cc, _phony_</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=D:\workspace1\flutter PROJECT_DIR=D:\workspace1\Gyalic_Dashboard-main FLUTTER_ROOT=D:\workspace1\flutter FLUTTER_EPHEMERAL_DIR=D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral PROJECT_DIR=D:\workspace1\Gyalic_Dashboard-main FLUTTER_TARGET=D:\workspace1\Gyalic_Dashboard-main\lib\main.dart DART_DEFINES=RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ== DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=D:\workspace1\Gyalic_Dashboard-main\.dart_tool\package_config.json D:/workspace1/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_windows.dll;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_export.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_windows.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_messenger.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_plugin_registrar.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_texture_registrar.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\core_implementations.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\standard_codec.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\plugin_registrar.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\flutter_engine.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\flutter_view_controller.cc;D:\workspace1\Gyalic_Dashboard-main\build\windows\flutter\_phony_</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">Generating D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_windows.dll, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_export.h, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_windows.h, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_messenger.h, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_plugin_registrar.h, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_texture_registrar.h, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/cpp_client_wrapper/core_implementations.cc, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/cpp_client_wrapper/standard_codec.cc, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/cpp_client_wrapper/plugin_registrar.cc, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/cpp_client_wrapper/flutter_engine.cc, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/cpp_client_wrapper/flutter_view_controller.cc, _phony_</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=D:\workspace1\flutter PROJECT_DIR=D:\workspace1\Gyalic_Dashboard-main FLUTTER_ROOT=D:\workspace1\flutter FLUTTER_EPHEMERAL_DIR=D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral PROJECT_DIR=D:\workspace1\Gyalic_Dashboard-main FLUTTER_TARGET=D:\workspace1\Gyalic_Dashboard-main\lib\main.dart DART_DEFINES=RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ== DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=D:\workspace1\Gyalic_Dashboard-main\.dart_tool\package_config.json D:/workspace1/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Profile
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_windows.dll;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_export.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_windows.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_messenger.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_plugin_registrar.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_texture_registrar.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\core_implementations.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\standard_codec.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\plugin_registrar.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\flutter_engine.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\flutter_view_controller.cc;D:\workspace1\Gyalic_Dashboard-main\build\windows\flutter\_phony_</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_windows.dll, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_export.h, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_windows.h, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_messenger.h, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_plugin_registrar.h, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_texture_registrar.h, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/cpp_client_wrapper/core_implementations.cc, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/cpp_client_wrapper/standard_codec.cc, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/cpp_client_wrapper/plugin_registrar.cc, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/cpp_client_wrapper/flutter_engine.cc, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/cpp_client_wrapper/flutter_view_controller.cc, _phony_</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=D:\workspace1\flutter PROJECT_DIR=D:\workspace1\Gyalic_Dashboard-main FLUTTER_ROOT=D:\workspace1\flutter FLUTTER_EPHEMERAL_DIR=D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral PROJECT_DIR=D:\workspace1\Gyalic_Dashboard-main FLUTTER_TARGET=D:\workspace1\Gyalic_Dashboard-main\lib\main.dart DART_DEFINES=RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ== DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=D:\workspace1\Gyalic_Dashboard-main\.dart_tool\package_config.json D:/workspace1/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_windows.dll;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_export.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_windows.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_messenger.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_plugin_registrar.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_texture_registrar.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\core_implementations.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\standard_codec.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\plugin_registrar.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\flutter_engine.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\flutter_view_controller.cc;D:\workspace1\Gyalic_Dashboard-main\build\windows\flutter\_phony_</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_windows.dll, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_export.h, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_windows.h, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_messenger.h, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_plugin_registrar.h, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_texture_registrar.h, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/cpp_client_wrapper/core_implementations.cc, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/cpp_client_wrapper/standard_codec.cc, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/cpp_client_wrapper/plugin_registrar.cc, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/cpp_client_wrapper/flutter_engine.cc, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/cpp_client_wrapper/flutter_view_controller.cc, _phony_</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=D:\workspace1\flutter PROJECT_DIR=D:\workspace1\Gyalic_Dashboard-main FLUTTER_ROOT=D:\workspace1\flutter FLUTTER_EPHEMERAL_DIR=D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral PROJECT_DIR=D:\workspace1\Gyalic_Dashboard-main FLUTTER_TARGET=D:\workspace1\Gyalic_Dashboard-main\lib\main.dart DART_DEFINES=RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ== DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=D:\workspace1\Gyalic_Dashboard-main\.dart_tool\package_config.json D:/workspace1/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_windows.dll;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_export.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_windows.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_messenger.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_plugin_registrar.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_texture_registrar.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\core_implementations.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\standard_codec.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\plugin_registrar.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\flutter_engine.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\flutter_view_controller.cc;D:\workspace1\Gyalic_Dashboard-main\build\windows\flutter\_phony_</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">Generating D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_windows.dll, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_export.h, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_windows.h, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_messenger.h, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_plugin_registrar.h, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_texture_registrar.h, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/cpp_client_wrapper/core_implementations.cc, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/cpp_client_wrapper/standard_codec.cc, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/cpp_client_wrapper/plugin_registrar.cc, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/cpp_client_wrapper/flutter_engine.cc, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/cpp_client_wrapper/flutter_view_controller.cc, _phony_</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=D:\workspace1\flutter PROJECT_DIR=D:\workspace1\Gyalic_Dashboard-main FLUTTER_ROOT=D:\workspace1\flutter FLUTTER_EPHEMERAL_DIR=D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral PROJECT_DIR=D:\workspace1\Gyalic_Dashboard-main FLUTTER_TARGET=D:\workspace1\Gyalic_Dashboard-main\lib\main.dart DART_DEFINES=RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ== DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=D:\workspace1\Gyalic_Dashboard-main\.dart_tool\package_config.json D:/workspace1/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Profile
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_windows.dll;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_export.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_windows.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_messenger.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_plugin_registrar.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_texture_registrar.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\core_implementations.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\standard_codec.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\plugin_registrar.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\flutter_engine.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\flutter_view_controller.cc;D:\workspace1\Gyalic_Dashboard-main\build\windows\flutter\_phony_</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_windows.dll, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_export.h, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_windows.h, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_messenger.h, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_plugin_registrar.h, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_texture_registrar.h, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/cpp_client_wrapper/core_implementations.cc, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/cpp_client_wrapper/standard_codec.cc, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/cpp_client_wrapper/plugin_registrar.cc, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/cpp_client_wrapper/flutter_engine.cc, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/cpp_client_wrapper/flutter_view_controller.cc, _phony_</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=D:\workspace1\flutter PROJECT_DIR=D:\workspace1\Gyalic_Dashboard-main FLUTTER_ROOT=D:\workspace1\flutter FLUTTER_EPHEMERAL_DIR=D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral PROJECT_DIR=D:\workspace1\Gyalic_Dashboard-main FLUTTER_TARGET=D:\workspace1\Gyalic_Dashboard-main\lib\main.dart DART_DEFINES=RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ== DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=D:\workspace1\Gyalic_Dashboard-main\.dart_tool\package_config.json D:/workspace1/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_windows.dll;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_export.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_windows.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_messenger.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_plugin_registrar.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_texture_registrar.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\core_implementations.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\standard_codec.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\plugin_registrar.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\flutter_engine.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\flutter_view_controller.cc;D:\workspace1\Gyalic_Dashboard-main\build\windows\flutter\_phony_</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_windows.dll, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_export.h, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_windows.h, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_messenger.h, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_plugin_registrar.h, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_texture_registrar.h, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/cpp_client_wrapper/core_implementations.cc, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/cpp_client_wrapper/standard_codec.cc, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/cpp_client_wrapper/plugin_registrar.cc, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/cpp_client_wrapper/flutter_engine.cc, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/cpp_client_wrapper/flutter_view_controller.cc, _phony_</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=D:\workspace1\flutter PROJECT_DIR=D:\workspace1\Gyalic_Dashboard-main FLUTTER_ROOT=D:\workspace1\flutter FLUTTER_EPHEMERAL_DIR=D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral PROJECT_DIR=D:\workspace1\Gyalic_Dashboard-main FLUTTER_TARGET=D:\workspace1\Gyalic_Dashboard-main\lib\main.dart DART_DEFINES=RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ== DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=D:\workspace1\Gyalic_Dashboard-main\.dart_tool\package_config.json D:/workspace1/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_windows.dll;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_export.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_windows.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_messenger.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_plugin_registrar.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_texture_registrar.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\core_implementations.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\standard_codec.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\plugin_registrar.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\flutter_engine.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\flutter_view_controller.cc;D:\workspace1\Gyalic_Dashboard-main\build\windows\flutter\_phony_</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">Generating D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_windows.dll, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_export.h, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_windows.h, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_messenger.h, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_plugin_registrar.h, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_texture_registrar.h, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/cpp_client_wrapper/core_implementations.cc, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/cpp_client_wrapper/standard_codec.cc, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/cpp_client_wrapper/plugin_registrar.cc, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/cpp_client_wrapper/flutter_engine.cc, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/cpp_client_wrapper/flutter_view_controller.cc, _phony_</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=D:\workspace1\flutter PROJECT_DIR=D:\workspace1\Gyalic_Dashboard-main FLUTTER_ROOT=D:\workspace1\flutter FLUTTER_EPHEMERAL_DIR=D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral PROJECT_DIR=D:\workspace1\Gyalic_Dashboard-main FLUTTER_TARGET=D:\workspace1\Gyalic_Dashboard-main\lib\main.dart DART_DEFINES=RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ== DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=D:\workspace1\Gyalic_Dashboard-main\.dart_tool\package_config.json D:/workspace1/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Profile
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_windows.dll;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_export.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_windows.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_messenger.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_plugin_registrar.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_texture_registrar.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\core_implementations.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\standard_codec.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\plugin_registrar.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\flutter_engine.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\flutter_view_controller.cc;D:\workspace1\Gyalic_Dashboard-main\build\windows\flutter\_phony_</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_windows.dll, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_export.h, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_windows.h, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_messenger.h, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_plugin_registrar.h, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/flutter_texture_registrar.h, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/cpp_client_wrapper/core_implementations.cc, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/cpp_client_wrapper/standard_codec.cc, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/cpp_client_wrapper/plugin_registrar.cc, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/cpp_client_wrapper/flutter_engine.cc, D:/workspace1/Gyalic_Dashboard-main/windows/flutter/ephemeral/cpp_client_wrapper/flutter_view_controller.cc, _phony_</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=D:\workspace1\flutter PROJECT_DIR=D:\workspace1\Gyalic_Dashboard-main FLUTTER_ROOT=D:\workspace1\flutter FLUTTER_EPHEMERAL_DIR=D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral PROJECT_DIR=D:\workspace1\Gyalic_Dashboard-main FLUTTER_TARGET=D:\workspace1\Gyalic_Dashboard-main\lib\main.dart DART_DEFINES=RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ== DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=D:\workspace1\Gyalic_Dashboard-main\.dart_tool\package_config.json D:/workspace1/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_windows.dll;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_export.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_windows.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_messenger.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_plugin_registrar.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_texture_registrar.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\core_implementations.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\standard_codec.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\plugin_registrar.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\flutter_engine.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\flutter_view_controller.cc;D:\workspace1\Gyalic_Dashboard-main\build\windows\flutter\_phony_</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\workspace1\Gyalic_Dashboard-main\build\windows\CMakeFiles\c66b7e4c01bc8c11edf073eacef8ba7f\flutter_assemble.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_windows.dll;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_export.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_windows.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_messenger.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_plugin_registrar.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_texture_registrar.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\core_implementations.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\standard_codec.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\plugin_registrar.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\flutter_engine.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\flutter_view_controller.cc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\workspace1\Gyalic_Dashboard-main\build\windows\flutter\CMakeFiles\flutter_assemble</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Profile|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_windows.dll;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_export.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_windows.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_messenger.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_plugin_registrar.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_texture_registrar.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\core_implementations.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\standard_codec.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\plugin_registrar.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\flutter_engine.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\flutter_view_controller.cc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">D:\workspace1\Gyalic_Dashboard-main\build\windows\flutter\CMakeFiles\flutter_assemble</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_windows.dll;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_export.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_windows.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_messenger.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_plugin_registrar.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_texture_registrar.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\core_implementations.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\standard_codec.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\plugin_registrar.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\flutter_engine.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\flutter_view_controller.cc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\workspace1\Gyalic_Dashboard-main\build\windows\flutter\CMakeFiles\flutter_assemble</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_windows.dll;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_export.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_windows.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_messenger.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_plugin_registrar.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_texture_registrar.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\core_implementations.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\standard_codec.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\plugin_registrar.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\flutter_engine.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\flutter_view_controller.cc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\workspace1\Gyalic_Dashboard-main\build\windows\flutter\CMakeFiles\flutter_assemble</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Profile|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_windows.dll;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_export.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_windows.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_messenger.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_plugin_registrar.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_texture_registrar.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\core_implementations.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\standard_codec.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\plugin_registrar.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\flutter_engine.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\flutter_view_controller.cc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">D:\workspace1\Gyalic_Dashboard-main\build\windows\flutter\CMakeFiles\flutter_assemble</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_windows.dll;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_export.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_windows.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_messenger.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_plugin_registrar.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_texture_registrar.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\core_implementations.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\standard_codec.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\plugin_registrar.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\flutter_engine.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\flutter_view_controller.cc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\workspace1\Gyalic_Dashboard-main\build\windows\flutter\CMakeFiles\flutter_assemble</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_windows.dll;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_export.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_windows.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_messenger.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_plugin_registrar.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_texture_registrar.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\core_implementations.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\standard_codec.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\plugin_registrar.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\flutter_engine.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\flutter_view_controller.cc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\workspace1\Gyalic_Dashboard-main\build\windows\flutter\CMakeFiles\flutter_assemble</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Profile|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_windows.dll;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_export.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_windows.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_messenger.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_plugin_registrar.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_texture_registrar.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\core_implementations.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\standard_codec.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\plugin_registrar.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\flutter_engine.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\flutter_view_controller.cc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">D:\workspace1\Gyalic_Dashboard-main\build\windows\flutter\CMakeFiles\flutter_assemble</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_windows.dll;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_export.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_windows.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_messenger.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_plugin_registrar.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\flutter_texture_registrar.h;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\core_implementations.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\standard_codec.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\plugin_registrar.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\flutter_engine.cc;D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\cpp_client_wrapper\flutter_view_controller.cc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\workspace1\Gyalic_Dashboard-main\build\windows\flutter\CMakeFiles\flutter_assemble</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\workspace1\Gyalic_Dashboard-main\windows\flutter\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/workspace1/Gyalic_Dashboard-main/windows/flutter/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/workspace1/Gyalic_Dashboard-main/windows -BD:/workspace1/Gyalic_Dashboard-main/build/windows --check-stamp-file D:/workspace1/Gyalic_Dashboard-main/build/windows/flutter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\generated_config.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\workspace1\Gyalic_Dashboard-main\build\windows\flutter\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">Building Custom Rule D:/workspace1/Gyalic_Dashboard-main/windows/flutter/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/workspace1/Gyalic_Dashboard-main/windows -BD:/workspace1/Gyalic_Dashboard-main/build/windows --check-stamp-file D:/workspace1/Gyalic_Dashboard-main/build/windows/flutter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\generated_config.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">D:\workspace1\Gyalic_Dashboard-main\build\windows\flutter\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/workspace1/Gyalic_Dashboard-main/windows/flutter/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/workspace1/Gyalic_Dashboard-main/windows -BD:/workspace1/Gyalic_Dashboard-main/build/windows --check-stamp-file D:/workspace1/Gyalic_Dashboard-main/build/windows/flutter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\generated_config.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\workspace1\Gyalic_Dashboard-main\build\windows\flutter\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/workspace1/Gyalic_Dashboard-main/windows/flutter/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/workspace1/Gyalic_Dashboard-main/windows -BD:/workspace1/Gyalic_Dashboard-main/build/windows --check-stamp-file D:/workspace1/Gyalic_Dashboard-main/build/windows/flutter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\generated_config.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\workspace1\Gyalic_Dashboard-main\build\windows\flutter\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">Building Custom Rule D:/workspace1/Gyalic_Dashboard-main/windows/flutter/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/workspace1/Gyalic_Dashboard-main/windows -BD:/workspace1/Gyalic_Dashboard-main/build/windows --check-stamp-file D:/workspace1/Gyalic_Dashboard-main/build/windows/flutter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\generated_config.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">D:\workspace1\Gyalic_Dashboard-main\build\windows\flutter\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/workspace1/Gyalic_Dashboard-main/windows/flutter/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/workspace1/Gyalic_Dashboard-main/windows -BD:/workspace1/Gyalic_Dashboard-main/build/windows --check-stamp-file D:/workspace1/Gyalic_Dashboard-main/build/windows/flutter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\generated_config.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\workspace1\Gyalic_Dashboard-main\build\windows\flutter\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/workspace1/Gyalic_Dashboard-main/windows/flutter/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/workspace1/Gyalic_Dashboard-main/windows -BD:/workspace1/Gyalic_Dashboard-main/build/windows --check-stamp-file D:/workspace1/Gyalic_Dashboard-main/build/windows/flutter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\generated_config.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\workspace1\Gyalic_Dashboard-main\build\windows\flutter\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">Building Custom Rule D:/workspace1/Gyalic_Dashboard-main/windows/flutter/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/workspace1/Gyalic_Dashboard-main/windows -BD:/workspace1/Gyalic_Dashboard-main/build/windows --check-stamp-file D:/workspace1/Gyalic_Dashboard-main/build/windows/flutter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\generated_config.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">D:\workspace1\Gyalic_Dashboard-main\build\windows\flutter\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/workspace1/Gyalic_Dashboard-main/windows/flutter/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/workspace1/Gyalic_Dashboard-main/windows -BD:/workspace1/Gyalic_Dashboard-main/build/windows --check-stamp-file D:/workspace1/Gyalic_Dashboard-main/build/windows/flutter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\workspace1\Gyalic_Dashboard-main\windows\flutter\ephemeral\generated_config.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\workspace1\Gyalic_Dashboard-main\build\windows\flutter\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\workspace1\Gyalic_Dashboard-main\build\windows\flutter\CMakeFiles\flutter_assemble">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\workspace1\Gyalic_Dashboard-main\build\windows\ZERO_CHECK.vcxproj">
+      <Project>{3E5E2C8B-68AB-3B39-9E21-55800878B883}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

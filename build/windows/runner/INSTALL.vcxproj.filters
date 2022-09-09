@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\workspace1\Gyalic_Dashboard-main\build\windows\CMakeFiles\a5559553f41be3075a30674f12ce743c\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{7C4BB659-9A4D-37C8-ABD2-0D78DA9D54F0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
