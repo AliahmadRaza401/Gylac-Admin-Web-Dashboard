@@ -113,7 +113,7 @@ class _TopRatedOrdersState extends State<TopRatedOrders> {
               mainAxisAlignment:MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                 'topRatList'.tr ,
+                 'Promotions'.tr ,
                   style: TextStyle(
                       fontSize: MediaQuery.of(context).size.height * .035,
                       color: Colors.black,

@@ -22,15 +22,26 @@ class _UsersScreenState extends State<UsersScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        padding: EdgeInsets.only(left: 20,right: 20),
+        padding: EdgeInsets.only(left: 20, right: 20),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-               Padding(
-         padding: EdgeInsets.only(left: 20,right: 20),
-                 child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
+            Padding(
+              padding: EdgeInsets.only(left: 20, right: 20),
+              child: Text(
+                'Users'.tr,
+                style: TextStyle(
+                    // color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: MediaQuery.of(context).size.width * .02),
+              ),
+            ),
+            SizedBox(height: 20),
+            Padding(
+              padding: EdgeInsets.only(left: 20, right: 20),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
                   Text(
                     'Image',
                     maxLines: 1,
@@ -63,12 +74,10 @@ class _UsersScreenState extends State<UsersScreen> {
                         fontSize: MediaQuery.of(context).size.width * .012,
                         fontWeight: FontWeight.bold),
                   ),
-                 
-              ],
+                ],
+              ),
             ),
-               ),
             const Divider(),
-           
             SizedBox(
               height: MediaQuery.of(context).size.height * 0.7,
               // width: 1000,

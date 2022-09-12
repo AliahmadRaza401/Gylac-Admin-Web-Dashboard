@@ -19,11 +19,22 @@ class _PaymentScreenState extends State<PaymentScreen> {
         padding: const EdgeInsets.only(
           left: 25,
           right: 25,
-          top: 50,
+          top: 20,
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            Row(
+              children: [
+                Text(
+                  'Payments'.tr,
+                  style: TextStyle(
+                      fontSize: MediaQuery.of(context).size.height * .04,
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold),
+                ),
+              ],
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -116,7 +127,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
                                       ),
                                     ),
                                     SizedBox(
-                                        width: 200,
+                                      width: 200,
                                       child: Text(
                                         document['deliveryName'],
                                         maxLines: 1,
@@ -127,7 +138,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
                                       ),
                                     ),
                                     SizedBox(
-                                        width: 200,
+                                      width: 200,
                                       child: Text(
                                         document['pickupName'],
                                         maxLines: 1,
@@ -138,7 +149,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
                                       ),
                                     ),
                                     SizedBox(
-                                        width: 200,
+                                      width: 200,
                                       child: Text(
                                         document['pickupAddress'],
                                         maxLines: 1,
@@ -148,20 +159,20 @@ class _PaymentScreenState extends State<PaymentScreen> {
                                             fontWeight: FontWeight.normal),
                                       ),
                                     ),
-                                     SizedBox(
-                                        width: 200,
-                                       child: Align(
+                                    SizedBox(
+                                      width: 200,
+                                      child: Align(
                                         alignment: Alignment.center,
-                                         child: Text(
+                                        child: Text(
                                           document['pickupDeliveryPrice'],
                                           maxLines: 1,
                                           overflow: TextOverflow.ellipsis,
                                           style: const TextStyle(
                                               fontSize: 13,
                                               fontWeight: FontWeight.normal),
-                                                                           ),
-                                       ),
-                                     ),
+                                        ),
+                                      ),
+                                    ),
                                   ],
                                 ),
                                 const Divider(),

@@ -19,16 +19,28 @@ class _SupportScreenState extends State<SupportScreen> {
         padding: const EdgeInsets.only(
           left: 25,
           right: 25,
-          top: 50,
+          top: 25,
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Text(
+                  'Support'.tr,
+                  style: TextStyle(
+                      fontSize: MediaQuery.of(context).size.height * .035,
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold),
+                ),
+              ],
+            ),
+            Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 SizedBox(
-                      width: 200,
+                  width: 200,
                   child: Text(
                     'orderId'.tr,
                     maxLines: 1,
@@ -39,7 +51,7 @@ class _SupportScreenState extends State<SupportScreen> {
                   ),
                 ),
                 SizedBox(
-                      width: 200,
+                  width: 200,
                   child: Text(
                     'issue'.tr,
                     maxLines: 1,
@@ -50,7 +62,7 @@ class _SupportScreenState extends State<SupportScreen> {
                   ),
                 ),
                 SizedBox(
-                      width: 200,
+                  width: 200,
                   child: Text(
                     'Message'.tr,
                     maxLines: 1,

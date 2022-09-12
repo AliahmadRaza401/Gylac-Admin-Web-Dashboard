@@ -45,7 +45,7 @@ class _HomePageState extends State<HomePage> {
       return DriversScreen();
     }
     if (selectedIndex == 2) {
-      return Orders();
+      return UsersScreen();
     }
     if (selectedIndex == 3) {
       return ReviewsScreen();
@@ -64,7 +64,7 @@ class _HomePageState extends State<HomePage> {
       return PaymentScreen();
     }
     if (selectedIndex == 8) {
-      return UsersScreen();
+      return Orders();
     }
 
     return Center(
@@ -336,7 +336,7 @@ class _HomePageState extends State<HomePage> {
       'bgActive': themeColor
     },
     {
-      'icon': 'asset/DashboardIcons/profile.png',
+      'icon': 'asset/drivers.png',
       'text': 'Drivers'.tr,
       'activeColor': purpleDashboard,
       'incativeColor': Colors.white,
@@ -344,39 +344,39 @@ class _HomePageState extends State<HomePage> {
       'bgActive': themeColor
     },
     {
-      'icon': 'asset/DashboardIcons/Group.png',
-      'text': 'order'.tr,
+      'icon': 'asset/DashboardIcons/profile.png',
+      'text': 'Users',
       'activeColor': purpleDashboard,
       'incativeColor': Colors.white,
       'bgInactive': Colors.transparent,
       'bgActive': themeColor
     },
     {
-      'icon': 'asset/DashboardIcons/profileGroup.png',
-      'text': 'review'.tr,
+      'icon': 'asset/reviewIcon.png',
+      'text': 'Review'.tr,
       'activeColor': purpleDashboard,
       'incativeColor': Colors.white,
       'bgInactive': Colors.transparent,
       'bgActive': themeColor
     },
     {
-      'icon': 'asset/DashboardIcons/delivery-truck.png',
-      'text': 'topRated'.tr,
+      'icon': 'asset/promotion.png',
+      'text': 'Promotions'.tr,
       'activeColor': purpleDashboard,
       'incativeColor': Colors.white,
       'bgInactive': Colors.transparent,
       'bgActive': themeColor
     },
     {
-      'icon': 'asset/DashboardIcons/doc.png',
-      'text': 'notifications',
+      'icon': 'asset/notificationsIcon.png',
+      'text': 'Notifications'.tr,
       'activeColor': purpleDashboard,
       'incativeColor': Colors.white,
       'bgInactive': Colors.transparent,
-      'bgActive': themeColor,
+      'bgActive': themeColor
     },
     {
-      'icon': 'asset/DashboardIcons/document.png',
+      'icon': 'asset/support.png',
       'text': 'support',
       'activeColor': purpleDashboard,
       'incativeColor': Colors.white,
@@ -384,16 +384,16 @@ class _HomePageState extends State<HomePage> {
       'bgActive': themeColor,
     },
     {
-      'icon': 'asset/DashboardIcons/pinloction.png',
-      'text': 'Payment',
+      'icon': 'asset/payments.png',
+      'text': 'Payments',
       'activeColor': purpleDashboard,
       'incativeColor': Colors.white,
       'bgInactive': Colors.transparent,
-      'bgActive': themeColor
+      'bgActive': themeColor,
     },
     {
-      'icon': 'asset/DashboardIcons/setting.png',
-      'text': 'Users',
+      'icon': 'asset/orderlist.png',
+      'text': 'Orders',
       'activeColor': purpleDashboard,
       'incativeColor': Colors.white,
       'bgInactive': Colors.transparent,
