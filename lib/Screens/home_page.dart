@@ -489,13 +489,13 @@ class _HomePageState extends State<HomePage> {
                           fontSize: MediaQuery.of(context).size.width * .014,
                           fontWeight: FontWeight.bold),
                     ),
-                    Text('admin'.tr)
+                    Text('Admin'.tr)
                   ],
                 ),
                 iconContainer(context, null, Colors.white, .03, .06),
                 Container(
                   padding: EdgeInsets.all(10),
-                  height: MediaQuery.of(context).size.height * .06,
+                  height: MediaQuery.of(context).size.height * .07,
                   width: MediaQuery.of(context).size.width * .07,
                   decoration: BoxDecoration(
                       color: Colors.white,
@@ -505,9 +505,9 @@ class _HomePageState extends State<HomePage> {
                       elevation: 0,
                       isExpanded: true,
                       underline: SizedBox(),
-                      hint: Text('EN'),
-                      items:
-                          <String>['english'.tr, 'urdu'.tr].map((String value) {
+                      hint: Text('Lang'),
+                      items: <String>['english'.tr, 'Mongolia'.tr]
+                          .map((String value) {
                         return DropdownMenuItem<String>(
                           value: value,
                           child: Text(
@@ -518,7 +518,7 @@ class _HomePageState extends State<HomePage> {
                       }).toList(),
                       onChanged: (value) {
                         print(value);
-                        if (value == 'Urdu') {
+                        if (value == 'Mongolia') {
                           var mangol = Locale('ru', 'RU');
                           Get.updateLocale(mangol);
                         } else {

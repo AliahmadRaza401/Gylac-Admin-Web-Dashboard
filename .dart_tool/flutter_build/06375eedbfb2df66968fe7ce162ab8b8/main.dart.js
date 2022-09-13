@@ -78026,7 +78026,7 @@ r=t.p
 p=A.r(f,A.a_(A.b([m,o,A.fn(b,A.cO("asset/DashboardIcons/promos.png",f,f,f,f,f),B.k,0.03,0.06)],r),B.j,B.y,B.h),B.f,f,f,f,f,f,f,f,f,f,f,p.a.a*0.1)
 b=A.aBU($.jr(),10,10)
 o=g.c.l(d).f
-m=A.ah(A.b([A.B("Admin",f,f,f,f,A.I(f,f,f,f,f,f,f,f,f,f,f,g.c.l(d).f.a.a*0.014,f,B.r,f,f,!0,f,f,f,f,f,f,f,f),f,f,f),A.B(A.a3("admin"),f,f,f,f,f,f,f,f)],r),B.hB,B.R,B.h)
+m=A.ah(A.b([A.B("Admin",f,f,f,f,A.I(f,f,f,f,f,f,f,f,f,f,f,g.c.l(d).f.a.a*0.014,f,B.r,f,f,!0,f,f,f,f,f,f,f,f),f,f,f),A.B(A.a3("Admin"),f,f,f,f,f,f,f,f)],r),B.hB,B.R,B.h)
 s=g.c
 s.toString
 s=A.fn(s,f,B.k,0.03,0.06)
@@ -78035,9 +78035,9 @@ d=g.c.l(d).f
 n=A.fp(A.S(n,158,158,158),1)
 k=A.b_(10)
 j=A.ax(f,f,f)
-i=A.B("EN",f,f,f,f,f,f,f,f)
+i=A.B("Lang",f,f,f,f,f,f,f,f)
 h=t.fo
-return A.r(f,A.a_(A.b([new A.cp(1,f),q,new A.cp(10,f),p,b,new A.cp(1,f),A.r(f,A.a_(A.b([m,s,A.r(f,new A.tf(A.al(new A.ad(A.b([A.a3("english"),A.a3("urdu")],t.s),new A.all(),h),!0,h.i("aJ.E")),i,new A.alm(),0,j,!0,f,t.Af),B.f,f,f,new A.at(B.k,f,n,k,f,f,B.t),f,l.a.b*0.06,f,f,new A.F(10,10,10,10),f,f,d.a.a*0.07)],r),B.j,B.y,B.h),B.f,f,f,f,f,f,f,f,f,f,f,o.a.a*0.2),new A.cp(1,f)],r),B.j,B.y,B.h),B.f,e,f,f,f,c.a.b*0.1,f,f,f,f,f,f)}}
+return A.r(f,A.a_(A.b([new A.cp(1,f),q,new A.cp(10,f),p,b,new A.cp(1,f),A.r(f,A.a_(A.b([m,s,A.r(f,new A.tf(A.al(new A.ad(A.b([A.a3("english"),A.a3("Mongolia")],t.s),new A.all(),h),!0,h.i("aJ.E")),i,new A.alm(),0,j,!0,f,t.Af),B.f,f,f,new A.at(B.k,f,n,k,f,f,B.t),f,l.a.b*0.07,f,f,new A.F(10,10,10,10),f,f,d.a.a*0.07)],r),B.j,B.y,B.h),B.f,f,f,f,f,f,f,f,f,f,f,o.a.a*0.2),new A.cp(1,f)],r),B.j,B.y,B.h),B.f,e,f,f,f,c.a.b*0.1,f,f,f,f,f,f)}}
 A.alk.prototype={
 $2(a,b){var s,r,q,p,o,n=null
 if(b.a===B.eS){s=$.bA()
@@ -78080,7 +78080,7 @@ return new A.kR(a,A.B(a,s,s,s,s,A.I(s,s,B.q,s,s,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s
 $S:483}
 A.alm.prototype={
 $1(a){A.ea(a)
-if(a==="Urdu")A.zC($.cK(),new A.hl("ru","RU"))
+if(a==="Mongolia")A.zC($.cK(),new A.hl("ru","RU"))
 else A.zC($.cK(),new A.hl("en","US"))},
 $S:122}
 A.oQ.prototype={
