@@ -19,15 +19,15 @@ class MobileDashBoard extends StatefulWidget {
 }
 
 class _MobileDashBoardState extends State<MobileDashBoard> {
-    int totalCustomers = 0;
+  int totalCustomers = 0;
   int pendingOrders = 0;
   int deliverdOrders = 0;
   int activedOrders = 0;
   int canceledOrders = 0;
-  int totalDrivers=0;
-  int activeDrivers=0;
-  int pendingDrivers=0;
-  int rejectedDrivers=0;
+  int totalDrivers = 0;
+  int activeDrivers = 0;
+  int pendingDrivers = 0;
+  int rejectedDrivers = 0;
   @override
   void initState() {
     super.initState();
@@ -91,7 +91,7 @@ class _MobileDashBoardState extends State<MobileDashBoard> {
         totalDrivers = count;
       });
     });
-      FirebaseFirestore.instance
+    FirebaseFirestore.instance
         .collection('drivers') //your collectionref
         .where('status', isEqualTo: 'pending')
         .get()
@@ -103,7 +103,7 @@ class _MobileDashBoardState extends State<MobileDashBoard> {
       });
     });
 
-      FirebaseFirestore.instance
+    FirebaseFirestore.instance
         .collection('drivers') //your collectionref
         .where('status', isEqualTo: 'rejected')
         .get()
@@ -114,7 +114,6 @@ class _MobileDashBoardState extends State<MobileDashBoard> {
         rejectedDrivers = count;
       });
     });
-  
 
     FirebaseFirestore.instance
         .collection('drivers') //your collectionref
@@ -128,8 +127,6 @@ class _MobileDashBoardState extends State<MobileDashBoard> {
       });
     });
 
-    
-
     FirebaseFirestore.instance
         .collection('users') //your collectionref
         // .where('deleted', isEqualTo: false)
@@ -141,10 +138,8 @@ class _MobileDashBoardState extends State<MobileDashBoard> {
         totalCustomers = count;
       });
     });
-
-
-
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -219,15 +214,13 @@ class _MobileDashBoardState extends State<MobileDashBoard> {
                 DashboardStatCardForMobile(
                     bgcolor: skyblue,
                     title: 'Total Revenue',
-                    value: '\$ 87,561',
-                    image: 'asset/DashboardIcons/revenue.png'
-                    ),
+                    value: '\$ 0',
+                    image: 'asset/DashboardIcons/revenue.png'),
                 DashboardStatCardForMobile(
-                   bgcolor: greencolor,
+                    bgcolor: greencolor,
                     title: 'Delivered Ordes',
                     value: '$deliverdOrders',
-                    image: 'asset/DashboardIcons/deliverd.png'
-                    ),
+                    image: 'asset/DashboardIcons/deliverd.png'),
               ],
             ),
             SizedBox(
@@ -237,11 +230,10 @@ class _MobileDashBoardState extends State<MobileDashBoard> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 DashboardStatCardForMobile(
-                      bgcolor: deeporangecolor,
+                    bgcolor: deeporangecolor,
                     title: 'Pending Orders',
                     value: '$pendingOrders',
-                    image: 'asset/DashboardIcons/pendin.png'
-                    ),
+                    image: 'asset/DashboardIcons/pendin.png'),
                 DashboardStatCardForMobile(
                     bgcolor: themeColor,
                     title: 'Customers',
@@ -254,92 +246,87 @@ class _MobileDashBoardState extends State<MobileDashBoard> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 DashboardDetailsCardForMobile(
-                      bgcolor: white,
-                        title: 'Orders Details',
-                        text1: 'Active Orders',
-                        value1: '$activedOrders',
-                        text2: 'Pending Orders',
-                        value2: '$pendingOrders',
-                        text3: 'Delivered Orders',
-                        value3: '$deliverdOrders',
-                        text4: 'Cancelled Orders',
-                        value4: '$canceledOrders',
-                        progess1: 20,
-                        totalprogress1: 100,
-                        progess2: 50,
-                        totalprogress2: 100,
-                        progess3: 10,
-                        totalprogress3: 100,
-                        progess4: 50,
-                        totalprogress4: 100
-                    ),
+                    bgcolor: white,
+                    title: 'Orders Details',
+                    text1: 'Active Orders',
+                    value1: '$activedOrders',
+                    text2: 'Pending Orders',
+                    value2: '$pendingOrders',
+                    text3: 'Delivered Orders',
+                    value3: '$deliverdOrders',
+                    text4: 'Cancelled Orders',
+                    value4: '$canceledOrders',
+                    progess1: 20,
+                    totalprogress1: 100,
+                    progess2: 50,
+                    totalprogress2: 100,
+                    progess3: 10,
+                    totalprogress3: 100,
+                    progess4: 50,
+                    totalprogress4: 100),
               ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
-
               children: [
                 DashboardDetailsCardForMobile(
                     bgcolor: white,
-                        title: 'Customers Details',
-                        text1: 'Total Customers',
-                        value1: '$totalCustomers',
-                        text2: 'Active Customers',
-                        value2: '$activedOrders',
-                        text3: 'Delivered Customers',
-                        value3: '$deliverdOrders',
-                        text4: 'New Customers',
-                        value4: '$pendingOrders',
-                        progess1: 20,
-                        totalprogress1: 100,
-                        progess2: 50,
-                        totalprogress2: 100,
-                        progess3: 10,
-                        totalprogress3: 100,
-                        progess4: 50,
-                        totalprogress4: 100),
+                    title: 'Customers Details',
+                    text1: 'Total Customers',
+                    value1: '$totalCustomers',
+                    text2: 'Active Customers',
+                    value2: '$activedOrders',
+                    text3: 'Delivered Customers',
+                    value3: '$deliverdOrders',
+                    text4: 'New Customers',
+                    value4: '$pendingOrders',
+                    progess1: 20,
+                    totalprogress1: 100,
+                    progess2: 50,
+                    totalprogress2: 100,
+                    progess3: 10,
+                    totalprogress3: 100,
+                    progess4: 50,
+                    totalprogress4: 100),
               ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
-
               children: [
                 PayrollCardForMobile(
                   bgcolor: white,
                   title: 'PayRoll',
                   filter: 'Filter by da',
                   text1: 'Total Payroll',
-                  value1: '1999900 MNT',
-                  progess1: 60,
+                  value1: '0 MNT',
+                  progess1: 0,
                   totalprogress1: 100,
-                  totalDrivers: '98',
+                  totalDrivers: '0',
                 ),
               ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
-
               children: [
                 DashboardDetailsCardForMobile(
                     bgcolor: white,
-                        title: 'Drivers Details',
-                        text1: 'Total Drivers',
-                        value1: '$totalDrivers',
-                        text2: 'Active Drivers',
-                        value2: '$activeDrivers',
-                        text3: 'Pending Drivers',
-                        value3: '$pendingDrivers',
-                        text4: 'Deactive Drivers',
-                        value4: '$rejectedDrivers',
-                        progess1: 20,
-                        totalprogress1: 100,
-                        progess2: 50,
-                        totalprogress2: 100,
-                        progess3: 10,
-                        totalprogress3: 100,
-                        progess4: 50,
-                        totalprogress4: 100
-                    ),
+                    title: 'Drivers Details',
+                    text1: 'Total Drivers',
+                    value1: '$totalDrivers',
+                    text2: 'Active Drivers',
+                    value2: '$activeDrivers',
+                    text3: 'Pending Drivers',
+                    value3: '$pendingDrivers',
+                    text4: 'Deactive Drivers',
+                    value4: '$rejectedDrivers',
+                    progess1: 20,
+                    totalprogress1: 100,
+                    progess2: 50,
+                    totalprogress2: 100,
+                    progess3: 10,
+                    totalprogress3: 100,
+                    progess4: 50,
+                    totalprogress4: 100),
               ],
             ),
             // Expanded(
@@ -528,14 +515,6 @@ class DashboardStatCardForMobile extends StatelessWidget {
   }
 }
 
-
-
-
-
-
-
-
-
 Widget mobileinputField(
     BuildContext context, String placeholder, controller, keyboard, icon) {
   return Container(
@@ -639,7 +618,7 @@ class DashboardDetailsCardForMobile extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 10),
       child: Container(
         height: MediaQuery.of(context).size.height * .27,
-        width: MediaQuery.of(context).size.width *.8,
+        width: MediaQuery.of(context).size.width * .8,
         decoration: BoxDecoration(
             color: white,
             borderRadius:
@@ -841,7 +820,7 @@ class PayrollCardForMobile extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 10),
       child: Container(
         height: MediaQuery.of(context).size.height * .27,
-        width: MediaQuery.of(context).size.width*.8,
+        width: MediaQuery.of(context).size.width * .8,
         decoration: BoxDecoration(
             color: white,
             borderRadius: BorderRadius.circular(20),

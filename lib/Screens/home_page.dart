@@ -22,7 +22,7 @@ import 'package:gylac_dashboard/Utils/widget.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 import 'orders.dart';
-
+  int selectedIndex = 0;
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -325,7 +325,7 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  int selectedIndex = 0;
+
   List sideItems = [
     {
       'icon': 'asset/DashboardIcons/ic_dashboard.png',
