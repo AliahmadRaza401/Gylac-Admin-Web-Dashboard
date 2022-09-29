@@ -38,6 +38,18 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "charts_common",
+      "rootUri": "file:///D:/workspace1/flutter/.pub-cache/hosted/pub.dartlang.org/charts_common-0.12.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "charts_flutter",
+      "rootUri": "file:///D:/workspace1/flutter/.pub-cache/hosted/pub.dartlang.org/charts_flutter-0.12.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "clock",
       "rootUri": "file:///D:/workspace1/flutter/.pub-cache/hosted/pub.dartlang.org/clock-1.1.1",
       "packageUri": "lib/",
@@ -76,6 +88,12 @@
     {
       "name": "cupertino_icons",
       "rootUri": "file:///D:/workspace1/flutter/.pub-cache/hosted/pub.dartlang.org/cupertino_icons-1.0.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "d_chart",
+      "rootUri": "file:///D:/workspace1/flutter/.pub-cache/hosted/pub.dartlang.org/d_chart-0.0.4",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -172,6 +190,12 @@
     {
       "name": "flutter_lints",
       "rootUri": "file:///D:/workspace1/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_lints-1.0.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "flutter_radar_chart",
+      "rootUri": "file:///D:/workspace1/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_radar_chart-0.2.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -506,7 +530,7 @@
       "languageVersion": "2.16"
     }
   ],
-  "generated": "2022-09-20T20:45:25.521230Z",
+  "generated": "2022-09-28T19:35:54.674526Z",
   "generator": "pub",
   "generatorVersion": "2.18.1"
 }

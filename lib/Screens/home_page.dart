@@ -22,7 +22,9 @@ import 'package:gylac_dashboard/Utils/widget.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 import 'orders.dart';
-  int selectedIndex = 0;
+
+int selectedIndex = 0;
+
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -325,7 +327,6 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-
   List sideItems = [
     {
       'icon': 'asset/DashboardIcons/ic_dashboard.png',
@@ -443,26 +444,44 @@ class _HomePageState extends State<HomePage> {
           Container(
             width: MediaQuery.of(context).size.width * .1,
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                iconContainer(
-                    context,
-                    Image.asset('asset/DashboardIcons/notification.png'),
-                    Colors.white,
-                    .03,
-                    .06),
-                iconContainer(
-                    context,
-                    Image.asset('asset/DashboardIcons/chat.png'),
-                    Colors.white,
-                    .03,
-                    .06),
-                iconContainer(
-                    context,
-                    Image.asset('asset/DashboardIcons/promos.png'),
-                    Colors.white,
-                    .03,
-                    .06),
+                InkWell(
+                  onTap: () {
+                    setState(() {
+                      selectedIndex = 5;
+                    });
+                    Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context) => HomePage()));
+                  },
+                  child: iconContainer(
+                      context,
+                      Image.asset('asset/DashboardIcons/notification.png'),
+                      Colors.white,
+                      .03,
+                      .06),
+                ),
+                InkWell(
+                  onTap: () {
+                    setState(() {
+                      selectedIndex = 6;
+                    });
+                    Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context) => HomePage()));
+                  },
+                  child: iconContainer(
+                      context,
+                      Image.asset('asset/DashboardIcons/chat.png'),
+                      Colors.white,
+                      .03,
+                      .06),
+                ),
+                // iconContainer(
+                //     context,
+                //     Image.asset('asset/DashboardIcons/promos.png'),
+                //     Colors.white,
+                //     .03,
+                //     .06),
               ],
             ),
           ),
@@ -972,49 +991,49 @@ class PayrollCard extends StatelessWidget {
                 Spacer(),
               ],
             ),
-            Spacer(),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                iconContainer(
-                    context,
-                    Text(
-                      'copy'.tr,
-                      style: TextStyle(color: white),
-                    ),
-                    themeColor,
-                    .07,
-                    .04),
-                iconContainer(
-                    context,
-                    Text(
-                      'csv '.tr,
-                      style: TextStyle(color: white),
-                    ),
-                    themeColor,
-                    .07,
-                    .04),
-                iconContainer(
-                    context,
-                    Text(
-                      'excel'.tr,
-                      style: TextStyle(color: white),
-                    ),
-                    themeColor,
-                    .07,
-                    .04),
-                iconContainer(
-                    context,
-                    Text(
-                      'pdf'.tr,
-                      style: TextStyle(color: white),
-                    ),
-                    themeColor,
-                    .07,
-                    .04),
-              ],
-            ),
-            Spacer(),
+            // Spacer(),
+            // Row(
+            //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            //   children: [
+            //     iconContainer(
+            //         context,
+            //         Text(
+            //           'copy'.tr,
+            //           style: TextStyle(color: white),
+            //         ),
+            //         themeColor,
+            //         .07,
+            //         .04),
+            //     iconContainer(
+            //         context,
+            //         Text(
+            //           'csv '.tr,
+            //           style: TextStyle(color: white),
+            //         ),
+            //         themeColor,
+            //         .07,
+            //         .04),
+            //     iconContainer(
+            //         context,
+            //         Text(
+            //           'excel'.tr,
+            //           style: TextStyle(color: white),
+            //         ),
+            //         themeColor,
+            //         .07,
+            //         .04),
+            //     iconContainer(
+            //         context,
+            //         Text(
+            //           'pdf'.tr,
+            //           style: TextStyle(color: white),
+            //         ),
+            //         themeColor,
+            //         .07,
+            //         .04),
+            //   ],
+            // ),
+            // Spacer(),
           ],
         ),
       ),

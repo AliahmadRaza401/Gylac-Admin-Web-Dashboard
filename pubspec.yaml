@@ -50,6 +50,8 @@ dependencies:
   image_picker_web: ^2.1.1
   mailer: ^5.1.0
   get: ^4.6.1
+  d_chart: ^0.0.4
+  flutter_radar_chart: ^0.2.1
 
 
 dev_dependencies:

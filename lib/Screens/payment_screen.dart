@@ -106,65 +106,21 @@ class _PaymentScreenState extends State<PaymentScreen> {
                       : ListView(
                           children: snapshot.data!.docs
                               .map((DocumentSnapshot document) {
-                            return Column(
-                              children: [
-                                const SizedBox(
-                                  height: 15,
-                                ),
-                                Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    SizedBox(
-                                      width: 200,
-                                      child: Text(
-                                        document['orderId'],
-                                        maxLines: 1,
-                                        overflow: TextOverflow.ellipsis,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      width: 200,
-                                      child: Text(
-                                        document['deliveryName'],
-                                        maxLines: 1,
-                                        overflow: TextOverflow.ellipsis,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      width: 200,
-                                      child: Text(
-                                        document['pickupName'],
-                                        maxLines: 1,
-                                        overflow: TextOverflow.ellipsis,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      width: 200,
-                                      child: Text(
-                                        document['pickupAddress'],
-                                        maxLines: 1,
-                                        overflow: TextOverflow.ellipsis,
-                                        style: const TextStyle(
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.normal),
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      width: 200,
-                                      child: Align(
-                                        alignment: Alignment.center,
+                            return Container(
+                              color: Colors.white,
+                              child: Column(
+                                children: [
+                                  const SizedBox(
+                                    height: 15,
+                                  ),
+                                  Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      SizedBox(
+                                        width: 200,
                                         child: Text(
-                                          document['pickupDeliveryPrice'],
+                                          document['orderId'],
                                           maxLines: 1,
                                           overflow: TextOverflow.ellipsis,
                                           style: const TextStyle(
@@ -172,11 +128,61 @@ class _PaymentScreenState extends State<PaymentScreen> {
                                               fontWeight: FontWeight.normal),
                                         ),
                                       ),
-                                    ),
-                                  ],
-                                ),
-                                const Divider(),
-                              ],
+                                      SizedBox(
+                                        width: 200,
+                                        child: Text(
+                                          document['deliveryName'],
+                                          maxLines: 1,
+                                          overflow: TextOverflow.ellipsis,
+                                          style: const TextStyle(
+                                              fontSize: 13,
+                                              fontWeight: FontWeight.normal),
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        width: 200,
+                                        child: Text(
+                                          document['pickupName'],
+                                          maxLines: 1,
+                                          overflow: TextOverflow.ellipsis,
+                                          style: const TextStyle(
+                                              fontSize: 13,
+                                              fontWeight: FontWeight.normal),
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        width: 200,
+                                        child: Text(
+                                          document['pickupAddress'],
+                                          maxLines: 1,
+                                          overflow: TextOverflow.ellipsis,
+                                          style: const TextStyle(
+                                              fontSize: 13,
+                                              fontWeight: FontWeight.normal),
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        width: 200,
+                                        child: Align(
+                                          alignment: Alignment.center,
+                                          child: Text(
+                                            document['pickupDeliveryPrice'],
+                                            maxLines: 1,
+                                            overflow: TextOverflow.ellipsis,
+                                            style: const TextStyle(
+                                                fontSize: 13,
+                                                fontWeight: FontWeight.normal),
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  const SizedBox(
+                                    height: 5,
+                                  ),
+                                  Divider()
+                                ],
+                              ),
                             );
                           }).toList(),
                         );

@@ -13,8 +13,7 @@ class OrdersMobile extends StatefulWidget {
 }
 
 class _OrdersMobileState extends State<OrdersMobile> {
-  final ordersStream =
-      FirebaseFirestore.instance.collection('orders');
+  final ordersStream = FirebaseFirestore.instance.collection('orders');
   FirebaseFirestore db = FirebaseFirestore.instance;
   bool isloading = false;
   addToTopRated(String deliveryName, String driverId, String parcel,
@@ -91,23 +90,23 @@ class _OrdersMobileState extends State<OrdersMobile> {
   //   // .onError((e){
   //   //   print(e.toString());
   // }
-Stream<QuerySnapshot> stream() async* {
-  var _stream = FirebaseFirestore.instance.collection('orders').snapshots();
-  yield* _stream;
-}
+  Stream<QuerySnapshot> stream() async* {
+    var _stream = FirebaseFirestore.instance.collection('orders').snapshots();
+    yield* _stream;
+  }
 
+  Stream<QuerySnapshot> searchData(String string) async* {
+    var firestore = FirebaseFirestore.instance;
+    var _search = firestore
+        .collection('orders')
+        .where('pickupEmail', isEqualTo: string)
+        .snapshots();
 
-Stream<QuerySnapshot> searchData(String string) async* {
-  var firestore = FirebaseFirestore.instance;
-  var _search = firestore
-      .collection('orders')
-      .where('pickupEmail', isEqualTo: string)
-      .snapshots();
+    yield* _search;
+  }
 
-  yield* _search;
-}
   int i = 0;
- String search='';
+  String search = '';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -127,56 +126,57 @@ Stream<QuerySnapshot> searchData(String string) async* {
               ],
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.all(15),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                inputFieldCircularMobile(
-                    context, 'Search here', null, null, Icon(Icons.search,size: 10,),
-                    (value) {
-                  setState(() {
-                    search=value;
-                    // final ordersStream =
-                    //     FirebaseFirestore.instance.collection('orders').where('pickupEmail',isEqualTo: value);
-                  });
-                  // print(ordersStream.parameters);
-                  print(value);
-                }),
-                // Spacer(
-                //   flex: 2,
-                // ),
-                // iconContainerWithdoubleIcon(
-                //     context,
-                //     Image.asset('asset/DashboardIcons/filter.png',width: 10,),
-                //     'Filter',
-                //     Colors.white,
-                //     Colors.black,
-                //     .05,
-                //     .03,
-                //     Icon(
-                //       Icons.keyboard_arrow_down_outlined,
-                //       color: Colors.deepOrange,
-                //     )),
-                // Spacer(
-                //   flex: 1,
-                // ),
-                Image.asset(
-                  'asset/DashboardIcons/refreshs.png',
-                  width: MediaQuery.of(context).size.width * .03,
-                ),
-                // Spacer(
-                //   flex: 1,
-                // ),
-              ],
-            ),
-          ),
+          // Padding(
+          //   padding: const EdgeInsets.all(15),
+          //   child: Row(
+          //     mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          //     children: [
+          //       inputFieldCircularMobile(
+          //           context, 'Search here', null, null, Icon(Icons.search,size: 10,),
+          //           (value) {
+          //         setState(() {
+          //           search=value;
+          //           // final ordersStream =
+          //           //     FirebaseFirestore.instance.collection('orders').where('pickupEmail',isEqualTo: value);
+          //         });
+          //         // print(ordersStream.parameters);
+          //         print(value);
+          //       }),
+          //       // Spacer(
+          //       //   flex: 2,
+          //       // ),
+          //       // iconContainerWithdoubleIcon(
+          //       //     context,
+          //       //     Image.asset('asset/DashboardIcons/filter.png',width: 10,),
+          //       //     'Filter',
+          //       //     Colors.white,
+          //       //     Colors.black,
+          //       //     .05,
+          //       //     .03,
+          //       //     Icon(
+          //       //       Icons.keyboard_arrow_down_outlined,
+          //       //       color: Colors.deepOrange,
+          //       //     )),
+          //       // Spacer(
+          //       //   flex: 1,
+          //       // ),
+          //       Image.asset(
+          //         'asset/DashboardIcons/refreshs.png',
+          //         width: MediaQuery.of(context).size.width * .03,
+          //       ),
+          //       // Spacer(
+          //       //   flex: 1,
+          //       // ),
+          //     ],
+          //   ),
+          // ),
+
           headingRow('Order ID', 'Date', 'Customer Name', 'Location', 'Amount',
               'Status Order'),
           Expanded(
             // padding: EdgeInsets.all(20),
             child: StreamBuilder<QuerySnapshot>(
-              stream: search==''?stream():searchData(search),
+              stream: search == '' ? stream() : searchData(search),
               builder: (BuildContext context,
                   AsyncSnapshot<QuerySnapshot> snapshot) {
                 if (snapshot.hasError) {
@@ -440,8 +440,7 @@ Stream<QuerySnapshot> searchData(String string) async* {
                           borderRadius: BorderRadius.circular(3)),
                       child: Text(
                         pending,
-                        
-                        style: TextStyle(color: Color(0xff56C662),fontSize: 9),
+                        style: TextStyle(color: Color(0xff56C662), fontSize: 9),
                       )),
                   Container(
                     width: MediaQuery.of(context).size.width * .03,

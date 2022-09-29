@@ -14,8 +14,7 @@ class Orders extends StatefulWidget {
 }
 
 class _OrdersState extends State<Orders> {
-  final ordersStream =
-      FirebaseFirestore.instance.collection('orders');
+  final ordersStream = FirebaseFirestore.instance.collection('orders');
   FirebaseFirestore db = FirebaseFirestore.instance;
   bool isloading = false;
   addToTopRated(String deliveryName, String driverId, String parcel,
@@ -92,23 +91,23 @@ class _OrdersState extends State<Orders> {
   //   // .onError((e){
   //   //   print(e.toString());
   // }
-Stream<QuerySnapshot> stream() async* {
-  var _stream = FirebaseFirestore.instance.collection('orders').snapshots();
-  yield* _stream;
-}
+  Stream<QuerySnapshot> stream() async* {
+    var _stream = FirebaseFirestore.instance.collection('orders').snapshots();
+    yield* _stream;
+  }
 
+  Stream<QuerySnapshot> searchData(String string) async* {
+    var firestore = FirebaseFirestore.instance;
+    var _search = firestore
+        .collection('orders')
+        .where('pickupEmail', isEqualTo: string)
+        .snapshots();
 
-Stream<QuerySnapshot> searchData(String string) async* {
-  var firestore = FirebaseFirestore.instance;
-  var _search = firestore
-      .collection('orders')
-      .where('pickupEmail', isEqualTo: string)
-      .snapshots();
+    yield* _search;
+  }
 
-  yield* _search;
-}
   int i = 0;
- String search='';
+  String search = '';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -119,7 +118,7 @@ Stream<QuerySnapshot> searchData(String string) async* {
             child: Row(
               children: [
                 Text(
-                 'orderList'.tr ,
+                  'orderList'.tr,
                   style: TextStyle(
                       fontSize: MediaQuery.of(context).size.height * .035,
                       color: Colors.black,
@@ -128,56 +127,58 @@ Stream<QuerySnapshot> searchData(String string) async* {
               ],
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.all(15),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                inputFieldCircular(
-                    context, 'searchHere'.tr, null, null, Icon(Icons.search),
-                    (value) {
-                  setState(() {
-                    search=value;
-                    // final ordersStream =
-                    //     FirebaseFirestore.instance.collection('orders').where('pickupEmail',isEqualTo: value);
-                  });
-                  // print(ordersStream.parameters);
-                  print(value);
-                }),
-                Spacer(
-                  flex: 10,
-                ),
-                iconContainerWithdoubleIcon(
-                    context,
-                    Image.asset('asset/DashboardIcons/filter.png'),
-                   'filter'.tr,
-                    Colors.white,
-                    Colors.black,
-                    .08,
-                    .06,
-                    Icon(
-                      Icons.keyboard_arrow_down_outlined,
-                      color: Colors.deepOrange,
-                    )),
-                Spacer(
-                  flex: 1,
-                ),
-                Image.asset(
-                  'asset/DashboardIcons/refreshs.png',
-                  width: MediaQuery.of(context).size.width * .03,
-                ),
-                Spacer(
-                  flex: 1,
-                ),
-              ],
-            ),
-          ),
-          headingRow('orderId'.tr, 'date'.tr,'cusTName'.tr, 'location'.tr,'amount'.tr ,
-              'orderstatus'.tr),
+          // Padding(
+
+          //   padding: const EdgeInsets.all(15),
+          //   child: Row(
+          //     mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          //     children: [
+          //       inputFieldCircular(
+          //           context, 'searchHere'.tr, null, null, Icon(Icons.search),
+          //           (value) {
+          //         setState(() {
+          //           search=value;
+          //           // final ordersStream =
+          //           //     FirebaseFirestore.instance.collection('orders').where('pickupEmail',isEqualTo: value);
+          //         });
+          //         // print(ordersStream.parameters);
+          //         print(value);
+          //       }),
+          //       Spacer(
+          //         flex: 10,
+          //       ),
+          //       iconContainerWithdoubleIcon(
+          //           context,
+          //           Image.asset('asset/DashboardIcons/filter.png'),
+          //          'filter'.tr,
+          //           Colors.white,
+          //           Colors.black,
+          //           .08,
+          //           .06,
+          //           Icon(
+          //             Icons.keyboard_arrow_down_outlined,
+          //             color: Colors.deepOrange,
+          //           )),
+          //       Spacer(
+          //         flex: 1,
+          //       ),
+          //       Image.asset(
+          //         'asset/DashboardIcons/refreshs.png',
+          //         width: MediaQuery.of(context).size.width * .03,
+          //       ),
+          //       Spacer(
+          //         flex: 1,
+          //       ),
+          //     ],
+          //   ),
+          // ),
+
+          headingRow('orderId'.tr, 'date'.tr, 'cusTName'.tr, 'location'.tr,
+              'amount'.tr, 'orderstatus'.tr),
           Expanded(
             // padding: EdgeInsets.all(20),
             child: StreamBuilder<QuerySnapshot>(
-              stream: search==''?stream():searchData(search),
+              stream: search == '' ? stream() : searchData(search),
               builder: (BuildContext context,
                   AsyncSnapshot<QuerySnapshot> snapshot) {
                 if (snapshot.hasError) {
@@ -470,7 +471,7 @@ Stream<QuerySnapshot> searchData(String string) async* {
           ),
         ),
         Positioned(
-            right: MediaQuery.of(context).size.width *.15,
+            right: MediaQuery.of(context).size.width * .15,
             top: 2,
             child: myButton(
                 context,
