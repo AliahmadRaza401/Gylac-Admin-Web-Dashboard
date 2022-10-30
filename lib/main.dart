@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:gylac_dashboard/Screens/Mobile/login_mobile.dart';
+import 'package:gylac_dashboard/Screens/home_page.dart';
 import 'package:gylac_dashboard/Screens/login_screen.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
@@ -51,8 +52,8 @@ class MyApp extends StatelessWidget {
                   return LoginMobile();
                 }
                 if (info.deviceScreenType == DeviceScreenType.desktop) {
-                  // return HomePage();
-                  return LoginScreen();
+                  return HomePage();
+                  // return LoginScreen();
                 }
                 return Container();
               }));

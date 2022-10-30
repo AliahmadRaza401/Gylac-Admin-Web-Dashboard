@@ -577,15 +577,18 @@ class DashboardStatCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: MediaQuery.of(context).size.height * .17,
+      height: MediaQuery.of(context).size.height * .10,
       width: MediaQuery.of(context).size.width * .2,
       decoration: BoxDecoration(
           color: bgcolor,
-          borderRadius: BorderRadius.circular(20),
+          borderRadius: BorderRadius.circular(15),
           boxShadow: [
-            BoxShadow(color: Color(0xffFF507A), offset: Offset(0, 3))
+            BoxShadow(
+              color: Color(0xffFF507A),
+              offset: Offset(0, 3),
+            )
           ]),
-      padding: EdgeInsets.all(15),
+      padding: EdgeInsets.only(left: 10, right: 10),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -597,9 +600,9 @@ class DashboardStatCard extends StatelessWidget {
                 title,
                 style: TextStyle(color: Colors.white),
               ),
-              SizedBox(
-                height: MediaQuery.of(context).size.height * .02,
-              ),
+              // SizedBox(
+              //   height: MediaQuery.of(context).size.height * .01,
+              // ),
               Text(
                 value,
                 style: TextStyle(
@@ -613,7 +616,7 @@ class DashboardStatCard extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
-                height: MediaQuery.of(context).size.height * .1,
+                height: MediaQuery.of(context).size.height * .05,
                 width: MediaQuery.of(context).size.width * .05,
                 decoration: BoxDecoration(
                     shape: BoxShape.circle,
@@ -677,9 +680,9 @@ class DashboardDetailsCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 10),
+      padding: const EdgeInsets.symmetric(vertical: 4),
       child: Container(
-        height: MediaQuery.of(context).size.height * .3,
+        // height: MediaQuery.of(context).size.height * .2,
         width: MediaQuery.of(context).size.width * .42,
         decoration: BoxDecoration(
             color: white,
@@ -692,6 +695,7 @@ class DashboardDetailsCard extends StatelessWidget {
                   blurRadius: 2)
             ]),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Row(
               children: [
@@ -701,11 +705,11 @@ class DashboardDetailsCard extends StatelessWidget {
                       title,
                       style: TextStyle(
                           color: Colors.white,
-                          fontSize: MediaQuery.of(context).size.width * .015),
+                          fontSize: MediaQuery.of(context).size.width * .010),
                     ),
                     themeColor,
-                    .2,
-                    .05),
+                    .1,
+                    .03),
               ],
             ),
             SizedBox(height: MediaQuery.of(context).size.height * .02),
@@ -713,7 +717,8 @@ class DashboardDetailsCard extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Container(
-                    height: MediaQuery.of(context).size.height * .2,
+                    padding: EdgeInsets.only(left: 10, right: 10),
+                    height: MediaQuery.of(context).size.height * .10,
                     width: MediaQuery.of(context).size.width * .2,
                     decoration: BoxDecoration(
                         color: white,
@@ -725,8 +730,9 @@ class DashboardDetailsCard extends StatelessWidget {
                               spreadRadius: .02,
                               blurRadius: 2)
                         ]),
-                    padding: EdgeInsets.all(15),
+                    // padding: EdgeInsets.all(15),
                     child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -742,7 +748,7 @@ class DashboardDetailsCard extends StatelessWidget {
                               style: TextStyle(
                                   color: Colors.grey,
                                   fontSize:
-                                      MediaQuery.of(context).size.width * .02),
+                                      MediaQuery.of(context).size.width * .009),
                             ),
                           ],
                         ),
@@ -752,7 +758,7 @@ class DashboardDetailsCard extends StatelessWidget {
                           backgroundColor: drawerIconColor,
                         ),
                         SizedBox(
-                          height: MediaQuery.of(context).size.height * .01,
+                          height: MediaQuery.of(context).size.height * .005,
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -768,7 +774,7 @@ class DashboardDetailsCard extends StatelessWidget {
                               style: TextStyle(
                                   color: Colors.grey,
                                   fontSize:
-                                      MediaQuery.of(context).size.width * .02),
+                                      MediaQuery.of(context).size.width * .009),
                             ),
                           ],
                         ),
@@ -780,7 +786,8 @@ class DashboardDetailsCard extends StatelessWidget {
                       ],
                     )),
                 Container(
-                    height: MediaQuery.of(context).size.height * .2,
+                    padding: EdgeInsets.only(left: 10, right: 10),
+                    height: MediaQuery.of(context).size.height * .10,
                     width: MediaQuery.of(context).size.width * .2,
                     decoration: BoxDecoration(
                         color: white,
@@ -792,9 +799,11 @@ class DashboardDetailsCard extends StatelessWidget {
                               spreadRadius: .02,
                               blurRadius: 2)
                         ]),
-                    padding: EdgeInsets.all(15),
                     child: Column(
                       children: [
+                        SizedBox(
+                          height: MediaQuery.of(context).size.height * .005,
+                        ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
@@ -809,7 +818,7 @@ class DashboardDetailsCard extends StatelessWidget {
                               style: TextStyle(
                                   color: Colors.grey,
                                   fontSize:
-                                      MediaQuery.of(context).size.width * .02),
+                                      MediaQuery.of(context).size.width * .009),
                             ),
                           ],
                         ),
@@ -819,7 +828,10 @@ class DashboardDetailsCard extends StatelessWidget {
                           backgroundColor: drawerIconColor,
                         ),
                         SizedBox(
-                          height: MediaQuery.of(context).size.height * .01,
+                          height: MediaQuery.of(context).size.height * .012,
+                        ),
+                        SizedBox(
+                          height: MediaQuery.of(context).size.height * .005,
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -835,7 +847,7 @@ class DashboardDetailsCard extends StatelessWidget {
                               style: TextStyle(
                                   color: Colors.grey,
                                   fontSize:
-                                      MediaQuery.of(context).size.width * .02),
+                                      MediaQuery.of(context).size.width * .009),
                             ),
                           ],
                         ),
@@ -848,6 +860,7 @@ class DashboardDetailsCard extends StatelessWidget {
                     )),
               ],
             ),
+            SizedBox(height: MediaQuery.of(context).size.height * .02),
           ],
         ),
       ),
@@ -878,9 +891,9 @@ class PayrollCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 10),
+      padding: const EdgeInsets.symmetric(vertical: 4),
       child: Container(
-        height: MediaQuery.of(context).size.height * .27,
+        height: MediaQuery.of(context).size.height * .17,
         width: MediaQuery.of(context).size.width * .42,
         decoration: BoxDecoration(
             color: white,
@@ -903,22 +916,22 @@ class PayrollCard extends StatelessWidget {
                       title,
                       style: TextStyle(
                           color: Colors.white,
-                          fontSize: MediaQuery.of(context).size.width * .015),
+                          fontSize: MediaQuery.of(context).size.width * .010),
                     ),
                     themeColor,
-                    .2,
-                    .05),
+                    .1,
+                    .03),
                 iconContainer(
                     context,
                     Text(
                       filter,
                       style: TextStyle(
                           color: Colors.white,
-                          fontSize: MediaQuery.of(context).size.width * .015),
+                          fontSize: MediaQuery.of(context).size.width * .010),
                     ),
                     themeColor,
                     .1,
-                    .05),
+                    .03),
               ],
             ),
             SizedBox(height: MediaQuery.of(context).size.height * .02),
@@ -927,7 +940,7 @@ class PayrollCard extends StatelessWidget {
               children: [
                 Spacer(),
                 Container(
-                    height: MediaQuery.of(context).size.height * .1,
+                    height: MediaQuery.of(context).size.height * .06,
                     width: MediaQuery.of(context).size.width * .2,
                     decoration: BoxDecoration(
                         color: white,
@@ -939,8 +952,9 @@ class PayrollCard extends StatelessWidget {
                               spreadRadius: .02,
                               blurRadius: 2)
                         ]),
-                    padding: EdgeInsets.all(15),
+                    // padding: EdgeInsets.all(15),
                     child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -956,7 +970,7 @@ class PayrollCard extends StatelessWidget {
                               style: TextStyle(
                                   color: Colors.grey,
                                   fontSize:
-                                      MediaQuery.of(context).size.width * .015),
+                                      MediaQuery.of(context).size.width * .009),
                             ),
                           ],
                         ),
@@ -986,54 +1000,11 @@ class PayrollCard extends StatelessWidget {
                       ],
                     ),
                     bgcolor,
-                    .1,
-                    .1),
+                    .06,
+                    .04),
                 Spacer(),
               ],
             ),
-            // Spacer(),
-            // Row(
-            //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            //   children: [
-            //     iconContainer(
-            //         context,
-            //         Text(
-            //           'copy'.tr,
-            //           style: TextStyle(color: white),
-            //         ),
-            //         themeColor,
-            //         .07,
-            //         .04),
-            //     iconContainer(
-            //         context,
-            //         Text(
-            //           'csv '.tr,
-            //           style: TextStyle(color: white),
-            //         ),
-            //         themeColor,
-            //         .07,
-            //         .04),
-            //     iconContainer(
-            //         context,
-            //         Text(
-            //           'excel'.tr,
-            //           style: TextStyle(color: white),
-            //         ),
-            //         themeColor,
-            //         .07,
-            //         .04),
-            //     iconContainer(
-            //         context,
-            //         Text(
-            //           'pdf'.tr,
-            //           style: TextStyle(color: white),
-            //         ),
-            //         themeColor,
-            //         .07,
-            //         .04),
-            //   ],
-            // ),
-            // Spacer(),
           ],
         ),
       ),

@@ -297,10 +297,10 @@ class _DashBoardState extends State<DashBoard> {
                 ],
               ),
               SizedBox(
-                height: MediaQuery.of(context).size.height * .01,
+                height: MediaQuery.of(context).size.height * .015,
               ),
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   DashboardDetailsCard(
                       bgcolor: white,
@@ -343,7 +343,7 @@ class _DashBoardState extends State<DashBoard> {
                 ],
               ),
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   PayrollCard(
                     bgcolor: white,
@@ -376,11 +376,15 @@ class _DashBoardState extends State<DashBoard> {
                       totalprogress4: 100),
                 ],
               ),
+              SizedBox(
+                height: 10,
+              ),
               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   SizedBox(
                     width: MediaQuery.of(context).size.width * 0.4,
-                    // height: MediaQuery.of(context).size.height * 0.4,
+                    height: MediaQuery.of(context).size.height * 0.4,
                     child: Column(
                       children: [
                         Text('Orders',
@@ -388,44 +392,41 @@ class _DashBoardState extends State<DashBoard> {
                               fontSize: 25,
                               fontWeight: FontWeight.bold,
                             )),
-                        Padding(
-                          padding: const EdgeInsets.all(16.0),
-                          child: AspectRatio(
-                            aspectRatio: 10 / 5,
-                            // aspectRatio: 8.0,
-                            child: DChartBar(
-                              data: [
-                                {
-                                  'id': 'Bar',
-                                  'data': [
-                                    {
-                                      'domain': 'Active Order',
-                                      'measure': activedOrders
-                                    },
-                                    {
-                                      'domain': 'Delivere Orders',
-                                      'measure': deliverdOrders
-                                    },
-                                    {
-                                      'domain': 'Pending Orders',
-                                      'measure': pendingOrders
-                                    },
-                                    {
-                                      'domain': 'Cancel Orders',
-                                      'measure': canceledOrders
-                                    },
-                                  ],
-                                },
-                              ],
-                              domainLabelPaddingToAxisLine: 16,
-                              axisLineTick: 2,
-                              axisLinePointTick: 2,
-                              axisLinePointWidth: 10,
-                              axisLineColor: Colors.green,
-                              measureLabelPaddingToAxisLine: 16,
-                              barColor: (barData, index, id) => Colors.green,
-                              showBarValue: true,
-                            ),
+                        AspectRatio(
+                          aspectRatio: 10 / 3,
+                          // aspectRatio: 8.0,
+                          child: DChartBar(
+                            data: [
+                              {
+                                'id': 'Bar',
+                                'data': [
+                                  {
+                                    'domain': 'Active Order',
+                                    'measure': activedOrders
+                                  },
+                                  {
+                                    'domain': 'Delivere Orders',
+                                    'measure': deliverdOrders
+                                  },
+                                  {
+                                    'domain': 'Pending Orders',
+                                    'measure': pendingOrders
+                                  },
+                                  {
+                                    'domain': 'Cancel Orders',
+                                    'measure': canceledOrders
+                                  },
+                                ],
+                              },
+                            ],
+                            domainLabelPaddingToAxisLine: 16,
+                            axisLineTick: 2,
+                            axisLinePointTick: 2,
+                            axisLinePointWidth: 10,
+                            axisLineColor: Colors.green,
+                            measureLabelPaddingToAxisLine: 16,
+                            barColor: (barData, index, id) => Colors.green,
+                            showBarValue: true,
                           ),
                         ),
                       ],
