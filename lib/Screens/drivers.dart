@@ -62,6 +62,99 @@ class _DriversScreenState extends State<DriversScreen>
                 ],
               ),
             ),
+            Container(
+              padding: EdgeInsets.all(10),
+              child: Column(
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      SizedBox(
+                        width: 15,
+                      ),
+                      Container(
+                        // color: Colors.yellow,
+                        width: MediaQuery.of(context).size.width * .08,
+                        height: MediaQuery.of(context).size.height * .08,
+                        alignment: Alignment.centerLeft,
+                        child: mytext(context, 'Image'),
+                      ),
+                      Container(
+                          // color: Colors.blue,
+                          alignment: Alignment.bottomLeft,
+                          width: MediaQuery.of(context).size.width * .1,
+                          child: mytext(context, 'Email')),
+                      Container(
+                          alignment: Alignment.bottomLeft,
+                          // color: Colors.red,
+                          width: MediaQuery.of(context).size.width * .1,
+                          child: mytext(context, "User Name")),
+                      Container(
+                          alignment: Alignment.bottomLeft,
+                          // color: Colors.amber,
+                          width: MediaQuery.of(context).size.width * .09,
+                          child: mytext(context, "Mobile")),
+                      Container(
+                          //  color: Colors.pink,
+                          alignment: Alignment.bottomLeft,
+                          width: MediaQuery.of(context).size.width * .1,
+                          child: mytext(context, 'Company Name')),
+                      Container(
+                          // color: Colors.pink,
+                          alignment: Alignment.bottomLeft,
+                          width: MediaQuery.of(context).size.width * .07,
+                          child: mytext(context, 'Rating')),
+                      Container(
+                          // color: Colors.pink,
+                          alignment: Alignment.bottomLeft,
+                          width: MediaQuery.of(context).size.width * .1,
+                          child: mytext(context, 'Vehicle Details')),
+                      Container(
+                          padding: EdgeInsets.symmetric(horizontal: 10),
+                          height: MediaQuery.of(context).size.height * .05,
+                          width: MediaQuery.of(context).size.width * .1,
+                          decoration: BoxDecoration(
+                              color: Color(0xffE3F8E5),
+                              border: Border.all(
+                                  color: Colors.grey.withOpacity(.3)),
+                              borderRadius: BorderRadius.circular(30)),
+                          child: Center(
+                              child: Text(
+                            'Status',
+                            style: TextStyle(
+                                color: Color.fromARGB(255, 25, 43, 27)),
+                          ))),
+                      // Container(
+                      //   width: MediaQuery.of(context).size.width * .02,
+                      //   // color: Colors.amber,
+                      //   child: pending == 'pending'
+                      //       ? GestureDetector(
+                      //           onTap: () {
+                      //             shwoDialog(context, docId, () {
+                      //               FirebaseFirestore.instance
+                      //                   .collection('drivers')
+                      //                   .doc(docId)
+                      //                   .update({'status': 'approved'}).then((value) {
+                      //                 Navigator.of(context).pop();
+                      //               });
+                      //             }, () {
+                      //               FirebaseFirestore.instance
+                      //                   .collection('drivers')
+                      //                   .doc(docId)
+                      //                   .update({'status': 'rejected'}).then((value) {
+                      //                 Navigator.of(context).pop();
+                      //               });
+                      //             });
+                      //           },
+                      //           child: Icon(Icons.more_horiz_outlined))
+                      //       : Container(),
+                      // )
+                    ],
+                  ),
+                  Divider()
+                ],
+              ),
+            ),
             Expanded(
                 child: TabBarView(
               controller: _tabController,
@@ -92,19 +185,19 @@ class _DriversScreenState extends State<DriversScreen>
                               children: snapshot.data!.docs
                                   .map((DocumentSnapshot document) {
                                 return allDrivers(
-                                  document['dp'],
-                                  document['email'],
-                                  document['fullName'],
-                                  document['mobileNumber'],
-                                  document['vehicleCompany'],
-                                  document['status'],
-                                  document['id'],
-                                  document['vDp'],
-                                  document['vehicleNumber'],
-                                  document['vehicleDesign'],
-                                  document['vehicleChassisNumber'],
-                                  document['status'],
-                                );
+                                    document['dp'],
+                                    document['email'],
+                                    document['fullName'],
+                                    document['mobileNumber'],
+                                    document['vehicleCompany'],
+                                    document['status'],
+                                    document['id'],
+                                    document['vDp'],
+                                    document['vehicleNumber'],
+                                    document['vehicleDesign'],
+                                    document['vehicleChassisNumber'],
+                                    document['status'],
+                                    document['rating']);
                               }).toList(),
                             );
                     },
@@ -149,7 +242,7 @@ class _DriversScreenState extends State<DriversScreen>
                                         document['vehicleDesign'],
                                         document['vehicleChassisNumber'],
                                         document['status'],
-                                      )
+                                        document['rating'])
                                     : Container();
                               }).toList(),
                             );
@@ -195,7 +288,7 @@ class _DriversScreenState extends State<DriversScreen>
                                         document['vehicleDesign'],
                                         document['vehicleChassisNumber'],
                                         document['status'],
-                                      )
+                                        document['rating'])
                                     : Container();
                               }).toList(),
                             );
@@ -210,8 +303,6 @@ class _DriversScreenState extends State<DriversScreen>
     );
   }
 
-
-
   Widget allDrivers(
       String profileImage,
       String email,
@@ -224,54 +315,82 @@ class _DriversScreenState extends State<DriversScreen>
       String enginNumber,
       String design,
       String chassiNumber,
-      String pending) {
+      String pending,
+      var rating) {
     return Container(
-      padding: EdgeInsets.all(20),
+      padding: EdgeInsets.all(10),
       child: Column(
         children: [
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Container(
-                width: MediaQuery.of(context).size.width * .04,
+                width: MediaQuery.of(context).size.width * .07,
                 height: MediaQuery.of(context).size.height * .08,
                 decoration: BoxDecoration(
                     color: Colors.grey,
                     borderRadius: BorderRadius.circular(10)),
                 // child: Image.network(profileImage),
               ),
+              SizedBox(
+                width: 15,
+              ),
               Container(
                   //  color: Colors.blue,
                   alignment: Alignment.bottomLeft,
-                  width: MediaQuery.of(context).size.width * .17,
+                  width: MediaQuery.of(context).size.width * .1,
                   child: mytext(context, email)),
               Container(
                   alignment: Alignment.bottomLeft,
 
                   //  color: Colors.red,
-                  width: MediaQuery.of(context).size.width * .12,
+                  width: MediaQuery.of(context).size.width * .1,
                   child: mytext(context, userName)),
               Container(
                   alignment: Alignment.bottomLeft,
 
                   //  color: Colors.amber,
-                  width: MediaQuery.of(context).size.width * .12,
+                  width: MediaQuery.of(context).size.width * .1,
                   child: mytext(context, mobile)),
               Container(
                   //  color: Colors.pink,
                   alignment: Alignment.bottomLeft,
-                  width: MediaQuery.of(context).size.width * .15,
+                  width: MediaQuery.of(context).size.width * .1,
                   child: mytext(context, companyName)),
-              myButton(context, Text('vehicleDetails'.tr), () {
-                shwovehicleDetails(vehicleimage, enginNumber, design,
-                    chassiNumber, companyName);
-              }, .1, .05),
+              Container(
+                  // color: Colors.pink,
+                  alignment: Alignment.bottomLeft,
+                  width: MediaQuery.of(context).size.width * .06,
+                  child: mytext(context, rating.toString())),
+              Container(
+                decoration: BoxDecoration(
+                  color: themeColor,
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                margin: EdgeInsets.only(right: 7),
+                width: MediaQuery.of(context).size.width * .12,
+                height: MediaQuery.of(context).size.height * 0.05,
+                child: Center(
+                  child: Text(
+                    'vehicle Details',
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+              ),
+              // myButton(context, Text('vehicleDetails'.tr), () {
+              //   shwovehicleDetails(vehicleimage, enginNumber, design,
+              //       chassiNumber, companyName);
+              // }, .12, .05),
               Container(
                   padding: EdgeInsets.symmetric(horizontal: 10),
                   height: MediaQuery.of(context).size.height * .05,
                   width: MediaQuery.of(context).size.width * .1,
                   decoration: BoxDecoration(
                       color: Color(0xffE3F8E5),
+                      // color: Colors.red,
                       border: Border.all(color: Colors.grey.withOpacity(.3)),
                       borderRadius: BorderRadius.circular(30)),
                   child: Center(
@@ -279,6 +398,9 @@ class _DriversScreenState extends State<DriversScreen>
                     status,
                     style: TextStyle(color: Color.fromARGB(255, 25, 43, 27)),
                   ))),
+              SizedBox(
+                width: 15,
+              ),
               Container(
                 width: MediaQuery.of(context).size.width * .02,
                 // color: Colors.amber,

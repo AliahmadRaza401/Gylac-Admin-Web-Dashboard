@@ -38,7 +38,7 @@ class _TopRatedCardState extends State<TopRatedCard> {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Container(
-        height: MediaQuery.of(context).size.height * .4,
+        height: MediaQuery.of(context).size.height * .1,
         width: MediaQuery.of(context).size.width / 2.4,
         decoration: BoxDecoration(
           border: Border.all(color: Colors.amber, width: 1),
@@ -50,14 +50,15 @@ class _TopRatedCardState extends State<TopRatedCard> {
           ],
           borderRadius: BorderRadius.circular(10),
           color: Colors.white,
+          // color: Colors.green,
         ),
-        padding: EdgeInsets.all(20),
+        padding: EdgeInsets.all(10),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Container(
               // color: Colors.black,
-              height: MediaQuery.of(context).size.height * .14,
+              // height: MediaQuery.of(context).size.height * .14,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -85,7 +86,7 @@ class _TopRatedCardState extends State<TopRatedCard> {
                           Padding(
                             padding: const EdgeInsets.all(2),
                             child: Container(
-                              height: MediaQuery.of(context).size.height * .08,
+                              // height: MediaQuery.of(context).size.height * .08,
                               width: MediaQuery.of(context).size.width * .04,
                               decoration: BoxDecoration(
                                   shape: BoxShape.rectangle,
@@ -180,7 +181,7 @@ class _TopRatedCardState extends State<TopRatedCard> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Container(
-                  width: MediaQuery.of(context).size.width * .2,
+                  // width: MediaQuery.of(context).size.width * .2,
                   height: MediaQuery.of(context).size.height * .18,
                   decoration: BoxDecoration(
                     border: Border.all(color: black, width: 1),
@@ -219,8 +220,7 @@ class _TopRatedCardState extends State<TopRatedCard> {
                                       ? truck
                                       : widget.vehicletype == "BIKE"
                                           ? cycle
-                                          : widget.vehicletype ==
-                                                  "MINI TRUCK"
+                                          : widget.vehicletype == "MINI TRUCK"
                                               ? mini_truck
                                               : "asset/Group 8503.png",
                       width: MediaQuery.of(context).size.width * .1,

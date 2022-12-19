@@ -44,19 +44,20 @@ Widget iconContainerWithtext(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             icon,
-            SizedBox(width: MediaQuery.of(context).size.width *.005),
+            SizedBox(width: MediaQuery.of(context).size.width * .005),
             Text(
               text,
-              style: TextStyle(color: fgColor,fontSize:MediaQuery.of(context).size.width *.007 ),
+              style: TextStyle(
+                  color: fgColor,
+                  fontSize: MediaQuery.of(context).size.width * .007),
             )
           ],
         ),
       ));
 }
 
-
-Widget iconContainerWithdoubleIcon(
-    BuildContext context, icon, text, bgcolor, fgColor, width, height,secondIcon) {
+Widget iconContainerWithdoubleIcon(BuildContext context, icon, text, bgcolor,
+    fgColor, width, height, secondIcon) {
   return Container(
       width: MediaQuery.of(context).size.width * width,
       height: MediaQuery.of(context).size.height * height,
@@ -76,22 +77,22 @@ Widget iconContainerWithdoubleIcon(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             icon,
-            SizedBox(width: MediaQuery.of(context).size.width *.005),
+            SizedBox(width: MediaQuery.of(context).size.width * .005),
             Text(
               text,
-              style: TextStyle(color: fgColor,fontSize: MediaQuery.of(context).size.width *.008),
+              style: TextStyle(
+                  color: fgColor,
+                  fontSize: MediaQuery.of(context).size.width * .008),
             ),
-            SizedBox(width: MediaQuery.of(context).size.width *.005),
+            SizedBox(width: MediaQuery.of(context).size.width * .005),
             secondIcon
           ],
         ),
       ));
 }
 
-
-
-Widget iconContainerWithdoubleIconMobile(
-    BuildContext context, icon, text, bgcolor, fgColor, width, height,secondIcon) {
+Widget iconContainerWithdoubleIconMobile(BuildContext context, icon, text,
+    bgcolor, fgColor, width, height, secondIcon) {
   return Container(
       width: MediaQuery.of(context).size.width * width,
       height: MediaQuery.of(context).size.height * height,
@@ -111,12 +112,12 @@ Widget iconContainerWithdoubleIconMobile(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             icon,
-            SizedBox(width: MediaQuery.of(context).size.width *.005),
+            SizedBox(width: MediaQuery.of(context).size.width * .005),
             Text(
               text,
               style: TextStyle(color: fgColor),
             ),
-            SizedBox(width: MediaQuery.of(context).size.width *.005),
+            SizedBox(width: MediaQuery.of(context).size.width * .005),
             secondIcon
           ],
         ),
@@ -164,7 +165,6 @@ Widget myButtonMobile(BuildContext context, btnText, VoidCallback function,
 shwoDialog(BuildContext context, String id, VoidCallback approvedFunction,
     VoidCallback rejectFunction) async {
   await showDialog(
-    
     context: context,
     builder: (context) => new AlertDialog(
       // title: new Text('Message'),
@@ -218,7 +218,9 @@ Widget mytext(BuildContext context, String text) {
     text,
     maxLines: 1,
     overflow: TextOverflow.ellipsis,
-    style: TextStyle(fontSize: MediaQuery.of(context).size.width * .01),
+    style: TextStyle(
+      fontSize: MediaQuery.of(context).size.width * .01,
+    ),
   );
 }
 
@@ -256,7 +258,6 @@ Widget myheading(BuildContext context, String text) {
     ],
   );
 }
-
 
 Widget mobileheading(BuildContext context, String text) {
   return Column(
@@ -319,16 +320,14 @@ Widget inputField(
   );
 }
 
-
-Widget inputFieldCircularMobile(
-    BuildContext context, String placeholder, controller, keyboard, icon,function) {
+Widget inputFieldCircularMobile(BuildContext context, String placeholder,
+    controller, keyboard, icon, function) {
   return Container(
     width: MediaQuery.of(context).size.width * .3,
     height: MediaQuery.of(context).size.height * .04,
     decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(100),
         color: Colors.white,
-        
         boxShadow: [
           BoxShadow(
               color: Colors.grey.shade200,
@@ -340,13 +339,13 @@ Widget inputFieldCircularMobile(
       onChanged: function,
       style: TextStyle(fontSize: MediaQuery.of(context).size.width / 80),
       keyboardType: keyboard,
-      
       controller: controller,
       decoration: InputDecoration(
-          
           suffixIcon: Padding(
-            padding:EdgeInsets.only(right: 10,) ,
-            child: icon),
+              padding: EdgeInsets.only(
+                right: 10,
+              ),
+              child: icon),
           hintText: placeholder,
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
@@ -356,21 +355,20 @@ Widget inputFieldCircularMobile(
             ),
           ),
           // isDense: true,
-          contentPadding: EdgeInsets.only(left: 15,  top:MediaQuery.of(context).size.height *.02)),
+          contentPadding: EdgeInsets.only(
+              left: 15, top: MediaQuery.of(context).size.height * .02)),
     ),
   );
 }
 
-
-Widget inputFieldCircular(
-    BuildContext context, String placeholder, controller, keyboard, icon,function) {
+Widget inputFieldCircular(BuildContext context, String placeholder, controller,
+    keyboard, icon, function) {
   return Container(
     width: MediaQuery.of(context).size.width * .3,
     height: MediaQuery.of(context).size.height * .06,
     decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(100),
         color: Colors.white,
-        
         boxShadow: [
           BoxShadow(
               color: Colors.grey.shade200,
@@ -382,13 +380,13 @@ Widget inputFieldCircular(
       onChanged: function,
       style: TextStyle(fontSize: MediaQuery.of(context).size.width / 80),
       keyboardType: keyboard,
-      
       controller: controller,
       decoration: InputDecoration(
-          
           suffixIcon: Padding(
-            padding:EdgeInsets.only(right: 15,) ,
-            child: icon),
+              padding: EdgeInsets.only(
+                right: 15,
+              ),
+              child: icon),
           hintText: placeholder,
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(10),
@@ -398,7 +396,8 @@ Widget inputFieldCircular(
             ),
           ),
           // isDense: true,
-          contentPadding: EdgeInsets.only(left: 15,  top:MediaQuery.of(context).size.height *.02)),
+          contentPadding: EdgeInsets.only(
+              left: 15, top: MediaQuery.of(context).size.height * .02)),
     ),
   );
 }

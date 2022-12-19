@@ -8,7 +8,6 @@ import 'package:gylac_dashboard/Screens/add_top_rated.dart';
 import 'package:gylac_dashboard/Screens/card_top_rated.dart';
 import 'package:gylac_dashboard/Utils/widget.dart';
 
-
 class TopRatedOrders extends StatefulWidget {
   const TopRatedOrders({Key? key}) : super(key: key);
 
@@ -110,18 +109,19 @@ class _TopRatedOrdersState extends State<TopRatedOrders> {
           Padding(
             padding: const EdgeInsets.only(left: 15, top: 30),
             child: Row(
-              mainAxisAlignment:MainAxisAlignment.spaceBetween,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                 'Promotions'.tr ,
+                  'Promotions'.tr,
                   style: TextStyle(
                       fontSize: MediaQuery.of(context).size.height * .035,
                       color: Colors.black,
                       fontWeight: FontWeight.bold),
                 ),
-                  myButton(context, Text('createAdd'.tr), () {
-                   Navigator.of(context).push(MaterialPageRoute(builder: ((context) => AddTopRated())));
-              }, .1, .05),
+                myButton(context, Text('createAdd'.tr), () {
+                  Navigator.of(context).push(
+                      MaterialPageRoute(builder: ((context) => AddTopRated())));
+                }, .1, .05),
               ],
             ),
           ),
@@ -164,8 +164,7 @@ class _TopRatedOrdersState extends State<TopRatedOrders> {
           //     'Status Order'),
           Expanded(
             child: StreamBuilder<QuerySnapshot>(
-              stream:
-                  ordersStream.snapshots(),
+              stream: ordersStream.snapshots(),
               builder: (BuildContext context,
                   AsyncSnapshot<QuerySnapshot> snapshot) {
                 if (snapshot.hasError) {
@@ -184,26 +183,34 @@ class _TopRatedOrdersState extends State<TopRatedOrders> {
                         ))
                     : GridView.builder(
                         dragStartBehavior: DragStartBehavior.down,
-                        physics: BouncingScrollPhysics(),
-                        gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-                            maxCrossAxisExtent: 750,
-                            mainAxisExtent: 300,
-                            mainAxisSpacing: 1,
-                            crossAxisSpacing: .01,
-                            childAspectRatio: .01),
+                        physics: NeverScrollableScrollPhysics(),
+                        // gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+                        //     maxCrossAxisExtent: 950,
+                        //     mainAxisExtent: 300,
+                        //     mainAxisSpacing: 1,
+                        //     crossAxisSpacing: .01,
+                        //     childAspectRatio: .01),
+                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                          childAspectRatio: 1.75,
+                          crossAxisCount: 3,
+                        ),
                         shrinkWrap: true,
                         itemCount: snapshot.data!.docs.length,
                         itemBuilder: (context, index) {
                           return TopRatedCard(
-                            orderName: "${snapshot.data!.docs[index]['orderName']}",
-                            details:  "${snapshot.data!.docs[index]['parcel']}",
-                            driverImg : "",
-                            driverName : "${snapshot.data!.docs[index]['driverName']}",
-                            price:  "${snapshot.data!.docs[index]['price']}",
-                            rating:  double.parse(snapshot.data!.docs[index]['rating']),
-                            vehicletype:  "${snapshot.data!.docs[index]['vehicleType']}",
-                            verhicleImg:  "",
-                            );
+                            orderName:
+                                "${snapshot.data!.docs[index]['orderName']}",
+                            details: "${snapshot.data!.docs[index]['parcel']}",
+                            driverImg: "",
+                            driverName:
+                                "${snapshot.data!.docs[index]['driverName']}",
+                            price: "${snapshot.data!.docs[index]['price']}",
+                            rating: double.parse(
+                                snapshot.data!.docs[index]['rating']),
+                            vehicletype:
+                                "${snapshot.data!.docs[index]['vehicleType']}",
+                            verhicleImg: "",
+                          );
                         });
               },
             ),

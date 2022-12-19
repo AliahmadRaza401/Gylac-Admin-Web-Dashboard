@@ -173,7 +173,7 @@ class _OrdersState extends State<Orders> {
           //   ),
           // ),
 
-          headingRow('orderId'.tr, 'date'.tr, 'cusTName'.tr, 'location'.tr,
+          headingRow('orderId'.tr, 'date'.tr, 'parcelPicked'.tr, 'location'.tr,
               'amount'.tr, 'orderstatus'.tr),
           Expanded(
             // padding: EdgeInsets.all(20),

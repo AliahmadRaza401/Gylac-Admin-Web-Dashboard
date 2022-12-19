@@ -40,39 +40,76 @@ class _UsersScreenState extends State<UsersScreen> {
             Padding(
               padding: EdgeInsets.only(left: 20, right: 20),
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  Text(
-                    'Image',
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                    style: TextStyle(
-                        fontSize: MediaQuery.of(context).size.width * .012,
-                        fontWeight: FontWeight.bold),
+                  Container(
+                    width: MediaQuery.of(context).size.width * .04,
+                    child: Text(
+                      'Image',
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: TextStyle(
+                          fontSize: MediaQuery.of(context).size.width * .012,
+                          fontWeight: FontWeight.bold),
+                    ),
                   ),
-                  Text(
-                    'Email'.tr,
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                    style: TextStyle(
-                        fontSize: MediaQuery.of(context).size.width * .012,
-                        fontWeight: FontWeight.bold),
+                  Container(
+          
+                    // padding: EdgeInsets.only(left: 10),
+                    width: MediaQuery.of(context).size.width * .12,
+                    child: Text(
+                      'Email'.tr,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: TextStyle(
+                          fontSize: MediaQuery.of(context).size.width * .012,
+                          fontWeight: FontWeight.bold),
+                    ),
                   ),
-                  Text(
-                    'Name'.tr,
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                    style: TextStyle(
-                        fontSize: MediaQuery.of(context).size.width * .012,
-                        fontWeight: FontWeight.bold),
+                  Container(
+               
+                    width: MediaQuery.of(context).size.width * .12,
+                    child: Text(
+                      'Name'.tr,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: TextStyle(
+                          fontSize: MediaQuery.of(context).size.width * .012,
+                          fontWeight: FontWeight.bold),
+                    ),
                   ),
-                  Text(
-                    'Phone No'.tr,
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                    style: TextStyle(
-                        fontSize: MediaQuery.of(context).size.width * .012,
-                        fontWeight: FontWeight.bold),
+                  Container(
+                    width: MediaQuery.of(context).size.width * .12,
+                    child: Text(
+                      'Phone No'.tr,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: TextStyle(
+                          fontSize: MediaQuery.of(context).size.width * .012,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                  Container(
+                    width: MediaQuery.of(context).size.width * .12,
+                    child: Text(
+                      'Password',
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: TextStyle(
+                          fontSize: MediaQuery.of(context).size.width * .012,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                  Container(
+                    width: MediaQuery.of(context).size.width * .12,
+                    child: Text(
+                      'UserId',
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: TextStyle(
+                          fontSize: MediaQuery.of(context).size.width * .012,
+                          fontWeight: FontWeight.bold),
+                    ),
                   ),
                 ],
               ),
@@ -109,6 +146,8 @@ class _UsersScreenState extends State<UsersScreen> {
                               document['email'],
                               document['fullName'],
                               document['mobileNumber'],
+                              document['password'],
+                              document['uid'],
                             );
                           }).toList(),
                         );
@@ -121,21 +160,17 @@ class _UsersScreenState extends State<UsersScreen> {
     );
   }
 
-  Widget allDrivers(
-    String profileImage,
-    String email,
-    String userName,
-    String mobile,
-  ) {
+  Widget allDrivers(String profileImage, String email, String userName,
+      String mobile, String password, String userId) {
     return Container(
-      padding: EdgeInsets.all(20),
+      padding: EdgeInsets.only(left: 10, right: 20),
       child: Column(
         children: [
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Container(
-                width: MediaQuery.of(context).size.width * .04,
+                width: MediaQuery.of(context).size.width * .07,
                 height: MediaQuery.of(context).size.height * .08,
                 decoration: BoxDecoration(
                     color: Colors.grey,
@@ -144,8 +179,8 @@ class _UsersScreenState extends State<UsersScreen> {
               ),
               Container(
                   //  color: Colors.blue,
-                  alignment: Alignment.bottomLeft,
-                  width: MediaQuery.of(context).size.width * .17,
+                  alignment: Alignment.centerLeft,
+                  width: MediaQuery.of(context).size.width * .1,
                   child: mytext(context, email)),
               Container(
                   alignment: Alignment.bottomLeft,
@@ -159,6 +194,18 @@ class _UsersScreenState extends State<UsersScreen> {
                   //  color: Colors.amber,
                   width: MediaQuery.of(context).size.width * .12,
                   child: mytext(context, mobile)),
+              Container(
+                  alignment: Alignment.bottomLeft,
+
+                  //  color: Colors.amber,
+                  width: MediaQuery.of(context).size.width * .12,
+                  child: mytext(context, password)),
+              Container(
+                  alignment: Alignment.bottomLeft,
+
+                  //  color: Colors.amber,
+                  width: MediaQuery.of(context).size.width * .12,
+                  child: mytext(context, userId)),
             ],
           ),
           Divider()
