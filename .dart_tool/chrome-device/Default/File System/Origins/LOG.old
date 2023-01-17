@@ -1,3 +1,5 @@
-2022/12/19-13:24:26.975 2de4 Reusing MANIFEST C:\Users\WINDOW~1\AppData\Local\Temp\flutter_tools.a6491ef4\flutter_tools_chrome_device.62c1c6bf\Default\File System\Origins/MANIFEST-000001
-2022/12/19-13:24:26.976 2de4 Recovering log #3
-2022/12/19-13:24:26.976 2de4 Reusing old log C:\Users\WINDOW~1\AppData\Local\Temp\flutter_tools.a6491ef4\flutter_tools_chrome_device.62c1c6bf\Default\File System\Origins/000003.log 
+2023/01/17-18:49:04.331 3694 Log #3: 3 ops saved to Table #4 OK
+2023/01/17-18:49:04.331 3694 Archiving C:\Users\PC-01\AppData\Local\Temp\flutter_tools.2f04dbf6\flutter_tools_chrome_device.66473259\Default\File System\Origins/000003.log: OK
+2023/01/17-18:49:04.331 3694 Table #4: 3 entries OK
+2023/01/17-18:49:04.332 3694 Archiving C:\Users\PC-01\AppData\Local\Temp\flutter_tools.2f04dbf6\flutter_tools_chrome_device.66473259\Default\File System\Origins/MANIFEST-000001: OK
+2023/01/17-18:49:04.336 3694 **** Repaired leveldb C:\Users\PC-01\AppData\Local\Temp\flutter_tools.2f04dbf6\flutter_tools_chrome_device.66473259\Default\File System\Origins; recovered 1 files; 181 bytes. Some data may have been lost. ****

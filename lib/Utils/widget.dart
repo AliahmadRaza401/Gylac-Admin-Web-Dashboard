@@ -236,24 +236,15 @@ Widget mytextForMobile(BuildContext context, String text) {
 Widget myheading(BuildContext context, String text) {
   return Column(
     children: [
-      Row(
-        children: [
-          Text(
-            text,
-            maxLines: 1,
-            overflow: TextOverflow.ellipsis,
-            style: TextStyle(
-                fontSize: MediaQuery.of(context).size.width * .012,
-                fontWeight: FontWeight.bold),
-          ),
-          SizedBox(
-            width: 10,
-          ),
-          // Image.asset(
-          //   sortIcon,
-          //   height: 13,
-          // )
-        ],
+      FittedBox(
+        child: Text(
+          text,
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
+          style: TextStyle(
+              fontSize: MediaQuery.of(context).size.width * .012,
+              fontWeight: FontWeight.bold),
+        ),
       ),
     ],
   );

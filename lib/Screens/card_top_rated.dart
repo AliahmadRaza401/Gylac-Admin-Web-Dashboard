@@ -138,15 +138,17 @@ class _TopRatedCardState extends State<TopRatedCard> {
                                                 .008,
                                         child: Image.asset(badg),
                                       ),
-                                      Text('topHigh'.tr,
-                                          style: TextStyle(
-                                              color: Colors.red,
-                                              fontFamily: 'Poppins',
-                                              fontSize: MediaQuery.of(context)
-                                                      .size
-                                                      .width *
-                                                  .007,
-                                              fontWeight: FontWeight.bold))
+                                      FittedBox(
+                                        child: Text('topHigh'.tr,
+                                            style: TextStyle(
+                                                color: Colors.red,
+                                                fontFamily: 'Poppins',
+                                                fontSize: MediaQuery.of(context)
+                                                        .size
+                                                        .width *
+                                                    .007,
+                                                fontWeight: FontWeight.bold)),
+                                      )
                                     ],
                                   ),
                                 ),

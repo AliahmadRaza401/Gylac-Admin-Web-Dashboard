@@ -29,7 +29,7 @@ class _UsersScreenState extends State<UsersScreen> {
             Padding(
               padding: EdgeInsets.only(left: 20, right: 20),
               child: Text(
-                'Users'.tr,
+                'users'.tr,
                 style: TextStyle(
                     // color: Colors.white,
                     fontWeight: FontWeight.bold,
@@ -45,7 +45,7 @@ class _UsersScreenState extends State<UsersScreen> {
                   Container(
                     width: MediaQuery.of(context).size.width * .04,
                     child: Text(
-                      'Image',
+                      'image'.tr,
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: TextStyle(
@@ -54,7 +54,6 @@ class _UsersScreenState extends State<UsersScreen> {
                     ),
                   ),
                   Container(
-          
                     // padding: EdgeInsets.only(left: 10),
                     width: MediaQuery.of(context).size.width * .12,
                     child: Text(
@@ -67,10 +66,9 @@ class _UsersScreenState extends State<UsersScreen> {
                     ),
                   ),
                   Container(
-               
                     width: MediaQuery.of(context).size.width * .12,
                     child: Text(
-                      'Name'.tr,
+                      'User Name'.tr,
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: TextStyle(
@@ -92,7 +90,7 @@ class _UsersScreenState extends State<UsersScreen> {
                   Container(
                     width: MediaQuery.of(context).size.width * .12,
                     child: Text(
-                      'Password',
+                      'password'.tr,
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: TextStyle(
@@ -103,7 +101,7 @@ class _UsersScreenState extends State<UsersScreen> {
                   Container(
                     width: MediaQuery.of(context).size.width * .12,
                     child: Text(
-                      'UserId',
+                      'id'.tr,
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: TextStyle(

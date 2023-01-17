@@ -323,14 +323,14 @@ class _DashBoardState extends State<DashBoard> {
                       totalprogress4: 100),
                   DashboardDetailsCard(
                       bgcolor: white,
-                      title: 'CustomerDetails'.tr,
-                      text1: 'TotalCustomer'.tr,
+                      title: 'customerDetails'.tr,
+                      text1: 'totalCustomer'.tr,
                       value1: '$totalCustomers',
-                      text2: 'ActiveCustomer'.tr,
+                      text2: 'activeCustomer'.tr,
                       value2: '$activedOrders',
-                      text3: 'NewCustomer'.tr,
+                      text3: 'newCustomer'.tr,
                       value3: '0',
-                      text4: 'OldCustomer'.tr,
+                      text4: 'oldCustomer'.tr,
                       value4: '$totalCustomers',
                       progess1: double.parse('$totalCustomers'),
                       totalprogress1: 100,
@@ -387,7 +387,7 @@ class _DashBoardState extends State<DashBoard> {
                     height: MediaQuery.of(context).size.height * 0.4,
                     child: Column(
                       children: [
-                        Text('Orders',
+                        Text('order'.tr,
                             style: TextStyle(
                               fontSize: 25,
                               fontWeight: FontWeight.bold,
@@ -440,7 +440,7 @@ class _DashBoardState extends State<DashBoard> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text('Drivers',
+                            Text('drivers'.tr,
                                 style: TextStyle(
                                   fontSize: 25,
                                   fontWeight: FontWeight.bold,
@@ -456,13 +456,19 @@ class _DashBoardState extends State<DashBoard> {
                               // {'domain': 'Off', 'measure': 12},
                               // {'domain': 'Warm', 'measure': 30},
                               // {'domain': 'Hot', 'measure': 30},
-                              {'domain': 'Total ', 'measure': totalDrivers},
-                              {'domain': 'Approved', 'measure': activeDrivers},
+                              {'domain': 'total'.tr, 'measure': totalDrivers},
                               {
-                                'domain': 'Rejected',
+                                'domain': 'approved'.tr,
+                                'measure': activeDrivers
+                              },
+                              {
+                                'domain': 'rejected'.tr,
                                 'measure': rejectedDrivers
                               },
-                              {'domain': 'Pending', 'measure': pendingDrivers},
+                              {
+                                'domain': 'pending'.tr,
+                                'measure': pendingDrivers
+                              },
                             ],
                             fillColor: (pieData, index) {
                               switch (pieData['domain']) {
@@ -511,7 +517,7 @@ class _DashBoardState extends State<DashBoard> {
                     width: MediaQuery.of(context).size.width * 0.5,
                     child: SfCartesianChart(
                       primaryXAxis: CategoryAxis(),
-                      title: ChartTitle(text: 'Total Order'),
+                      title: ChartTitle(text: 'totalRevenue'.tr),
                       legend: Legend(isVisible: true),
                       series: <LineSeries<SalesData, String>>[
                         LineSeries<SalesData, String>(

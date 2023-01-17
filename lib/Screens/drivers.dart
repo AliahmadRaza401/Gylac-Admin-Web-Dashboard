@@ -51,13 +51,13 @@ class _DriversScreenState extends State<DriversScreen>
                 controller: _tabController,
                 tabs: [
                   Tab(
-                    text: "All Drivers",
+                    text: "drivers".tr,
                   ),
                   Tab(
-                    text: "Accepted",
+                    text: "accepted".tr,
                   ),
                   Tab(
-                    text: "Rejected",
+                    text: "rejected".tr,
                   ),
                 ],
               ),
@@ -77,38 +77,38 @@ class _DriversScreenState extends State<DriversScreen>
                         width: MediaQuery.of(context).size.width * .08,
                         height: MediaQuery.of(context).size.height * .08,
                         alignment: Alignment.centerLeft,
-                        child: mytext(context, 'Image'),
+                        child: mytext(context, 'image'.tr),
                       ),
                       Container(
                           // color: Colors.blue,
                           alignment: Alignment.bottomLeft,
                           width: MediaQuery.of(context).size.width * .1,
-                          child: mytext(context, 'Email')),
+                          child: mytext(context, 'Email'.tr)),
                       Container(
                           alignment: Alignment.bottomLeft,
                           // color: Colors.red,
                           width: MediaQuery.of(context).size.width * .1,
-                          child: mytext(context, "User Name")),
+                          child: mytext(context, "User Name".tr)),
                       Container(
                           alignment: Alignment.bottomLeft,
                           // color: Colors.amber,
                           width: MediaQuery.of(context).size.width * .09,
-                          child: mytext(context, "Mobile")),
+                          child: mytext(context, "Mobile".tr)),
                       Container(
                           //  color: Colors.pink,
                           alignment: Alignment.bottomLeft,
                           width: MediaQuery.of(context).size.width * .1,
-                          child: mytext(context, 'Company Name')),
+                          child: mytext(context, 'Company Name'.tr)),
                       Container(
                           // color: Colors.pink,
                           alignment: Alignment.bottomLeft,
                           width: MediaQuery.of(context).size.width * .07,
-                          child: mytext(context, 'Rating')),
+                          child: mytext(context, 'rating'.tr)),
                       Container(
                           // color: Colors.pink,
                           alignment: Alignment.bottomLeft,
                           width: MediaQuery.of(context).size.width * .1,
-                          child: mytext(context, 'Vehicle Details')),
+                          child: mytext(context, 'Vehicle Details'.tr.tr)),
                       Container(
                           padding: EdgeInsets.symmetric(horizontal: 10),
                           height: MediaQuery.of(context).size.height * .05,
@@ -120,7 +120,7 @@ class _DriversScreenState extends State<DriversScreen>
                               borderRadius: BorderRadius.circular(30)),
                           child: Center(
                               child: Text(
-                            'Status',
+                            'Status'.tr,
                             style: TextStyle(
                                 color: Color.fromARGB(255, 25, 43, 27)),
                           ))),
@@ -372,7 +372,7 @@ class _DriversScreenState extends State<DriversScreen>
                 height: MediaQuery.of(context).size.height * 0.05,
                 child: Center(
                   child: Text(
-                    'vehicle Details',
+                    'Vehicle Details'.tr,
                     style: TextStyle(
                       fontSize: 12,
                       color: Colors.white,

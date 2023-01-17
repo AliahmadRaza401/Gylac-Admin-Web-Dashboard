@@ -32,7 +32,7 @@ class _NotificatonScreenState extends State<NotificatonScreen> {
             child: Row(
               children: [
                 Text(
-                  'Notifications'.tr,
+                  'notification'.tr,
                   style: TextStyle(
                       fontSize: MediaQuery.of(context).size.height * .035,
                       color: Colors.black,
@@ -149,24 +149,22 @@ class _NotificatonScreenState extends State<NotificatonScreen> {
                           // color: Color(0xffE3F8E5),
 
                           color: pending == 'Accepted'
-                                ? Color(0xff56C662).withOpacity(.3)
-                                : pending == 'Pending'
-                                    ? Color.fromARGB(255, 250, 209, 6)
-                                        .withOpacity(.3)
-                                    : pending == 'completed'
-                                        ? Color(0xff56C662).withOpacity(0.3)
-                                        : Color.fromARGB(255, 250, 6, 6)
-                                            .withOpacity(.3),
+                              ? Color(0xff56C662).withOpacity(.3)
+                              : pending == 'Pending'
+                                  ? Color.fromARGB(255, 250, 209, 6)
+                                      .withOpacity(.3)
+                                  : pending == 'completed'
+                                      ? Color(0xff56C662).withOpacity(0.3)
+                                      : Color.fromARGB(255, 250, 6, 6)
+                                          .withOpacity(.3),
                           border: Border.all(
                               color: pending == 'Accepted'
                                   ? Color(0xff56C662)
                                   : pending == 'Pending'
                                       ? Color.fromARGB(255, 250, 209, 6)
-                                    
                                       : pending == 'completed'
                                           ? Color(0xff56C662)
-                                          : Color.fromARGB(255, 250, 6, 6)
-                                            ),
+                                          : Color.fromARGB(255, 250, 6, 6)),
                           borderRadius: BorderRadius.circular(30)),
                       child: Center(
                           child: Text(
@@ -176,11 +174,9 @@ class _NotificatonScreenState extends State<NotificatonScreen> {
                                 ? Color(0xff56C662)
                                 : pending == 'Pending'
                                     ? Color.fromARGB(255, 250, 209, 6)
-                                   
                                     : pending == 'completed'
                                         ? Color(0xff56C662)
-                                        : Color.fromARGB(255, 250, 6, 6)
-                                       ),
+                                        : Color.fromARGB(255, 250, 6, 6)),
                       ))),
                 ],
               ),

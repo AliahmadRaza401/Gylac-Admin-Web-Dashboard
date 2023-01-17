@@ -701,11 +701,14 @@ class DashboardDetailsCard extends StatelessWidget {
               children: [
                 iconContainer(
                     context,
-                    Text(
-                      title,
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: MediaQuery.of(context).size.width * .010),
+                    Container(
+                      margin: const EdgeInsets.symmetric(horizontal: 5),
+                      child: Text(
+                        title,
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: MediaQuery.of(context).size.width * .010),
+                      ),
                     ),
                     themeColor,
                     .1,
