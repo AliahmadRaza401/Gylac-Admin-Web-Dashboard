@@ -1,0 +1,7 @@
+2022/12/19-14:27:54.138 3444 Reusing MANIFEST C:\Users\WINDOW~1\AppData\Local\Temp\flutter_tools.9799788f\flutter_tools_chrome_device.e2371873\Default\IndexedDB\http_localhost_52718.indexeddb.leveldb/MANIFEST-000001
+2022/12/19-14:27:54.138 3444 Recovering log #4
+2022/12/19-14:27:54.139 3444 Reusing old log C:\Users\WINDOW~1\AppData\Local\Temp\flutter_tools.9799788f\flutter_tools_chrome_device.e2371873\Default\IndexedDB\http_localhost_52718.indexeddb.leveldb/000004.log 
+2022/12/19-14:27:56.464 8b0 Level-0 table #8: started
+2022/12/19-14:27:56.476 8b0 Level-0 table #8: 1663 bytes OK
+2022/12/19-14:27:56.479 8b0 Delete type=0 #4
+2022/12/19-14:27:56.480 8b0 Manual compaction at level-0 from '\x00\x03\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x04\x00\x00\x00' @ 0 : 0; will stop at (end)
