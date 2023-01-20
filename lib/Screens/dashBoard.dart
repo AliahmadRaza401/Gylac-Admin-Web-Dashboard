@@ -511,128 +511,148 @@ class _DashBoardState extends State<DashBoard> {
                   ),
                 ],
               ),
-              Row(children: [
+              Row(mainAxisAlignment: MainAxisAlignment.center, children: [
                 Center(
-                  child: Container(
-                    width: MediaQuery.of(context).size.width * 0.5,
-                    child: SfCartesianChart(
-                      primaryXAxis: CategoryAxis(),
-                      title: ChartTitle(text: 'totalRevenue'.tr),
-                      legend: Legend(isVisible: true),
-                      series: <LineSeries<SalesData, String>>[
-                        LineSeries<SalesData, String>(
-                            dataSource: [
-                              SalesData('Jan',
-                                  double.parse(totalCustomers.toString())),
-                              SalesData('Feb', 28),
-                              SalesData('Mar', 34),
-                              SalesData('Apr', 32),
-                              SalesData('May', 40)
-                            ],
-                            xValueMapper: (SalesData sales, _) => sales.year,
-                            yValueMapper: (SalesData sales, _) => sales.sales,
-                            dataLabelSettings: DataLabelSettings(
-                                isVisible:
-                                    true) // Enables the data label.            )          ]        )      )    )
+                  child: Column(
+                    // mainAxisAlignment: MainAxisAlignment.center,
+                    // crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text('totalRevenue'.tr,
+                              style: TextStyle(
+                                fontSize: 25,
+                                fontWeight: FontWeight.bold,
+                              )),
+                        ],
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Container(
+                        width: MediaQuery.of(context).size.width * 0.8,
+                        child: SfCartesianChart(
+                          primaryXAxis: CategoryAxis(),
+                          legend: Legend(isVisible: true),
+                          series: <LineSeries<SalesData, String>>[
+                            LineSeries<SalesData, String>(
+                                dataSource: [
+                                  SalesData('Jan',
+                                      double.parse(totalCustomers.toString())),
+                                  SalesData('Feb', 28),
+                                  SalesData('Mar', 34),
+                                  SalesData('Apr', 32),
+                                  SalesData('May', 40)
+                                ],
+                                xValueMapper: (SalesData sales, _) =>
+                                    sales.year,
+                                yValueMapper: (SalesData sales, _) =>
+                                    sales.sales,
+                                dataLabelSettings: DataLabelSettings(
+                                    isVisible:
+                                        true) // Enables the data label.            )          ]        )      )    )
 
-                            )
+                                )
 
-                        // Row(
-                        //   children: [
-                        //     Expanded(
-                        //       child: Container(
-                        //         // width: double.infinity,
-                        //         height: MediaQuery.of(context).size.height * .1,
-                        //         decoration: BoxDecoration(
-                        //             color: themeColor,
-                        //             borderRadius: BorderRadius.circular(10)),
-                        //         child: Row(
-                        //           children: [
-                        //             Spacer(
-                        //               flex: 1,
-                        //             ),
-                        //             inputField(context, "", null, null, null),
-                        //             Spacer(),
-                        //             iconContainer(
-                        //                 context,
-                        //                 Text(
-                        //                   'Filter by Date',
-                        //                   style: TextStyle(color: themeColor),
-                        //                 ),
-                        //                 white,
-                        //                 .08,
-                        //                 .05),
-                        //             Spacer(flex: 9),
-                        //             Container(
-                        //               width: MediaQuery.of(context).size.width * .3,
-                        //               child: Row(
-                        //                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        //                 children: [
-                        //                   iconContainer(
-                        //                       context,
-                        //                       Text(
-                        //                         'Copy',
-                        //                         style: TextStyle(color: themeColor),
-                        //                       ),
-                        //                       white,
-                        //                       .07,
-                        //                       .05),
-                        //                   iconContainer(
-                        //                       context,
-                        //                       Text(
-                        //                         'CSV',
-                        //                         style: TextStyle(color: themeColor),
-                        //                       ),
-                        //                       white,
-                        //                       .07,
-                        //                       .05),
-                        //                   iconContainer(
-                        //                       context,
-                        //                       Text(
-                        //                         'Excel',
-                        //                         style: TextStyle(color: themeColor),
-                        //                       ),
-                        //                       white,
-                        //                       .07,
-                        //                       .05),
-                        //                   iconContainer(
-                        //                       context,
-                        //                       Text(
-                        //                         'PDF',
-                        //                         style: TextStyle(color: themeColor),
-                        //                       ),
-                        //                       white,
-                        //                       .07,
-                        //                       .05),
-                        //                 ],
-                        //               ),
-                        //             ),
-                        //             Spacer(),
-                        //           ],
-                        //         ),
-                        //       ),
-                        //     ),
-                        //   ],
-                        // )
-                      ],
-                    ),
+                            // Row(
+                            //   children: [
+                            //     Expanded(
+                            //       child: Container(
+                            //         // width: double.infinity,
+                            //         height: MediaQuery.of(context).size.height * .1,
+                            //         decoration: BoxDecoration(
+                            //             color: themeColor,
+                            //             borderRadius: BorderRadius.circular(10)),
+                            //         child: Row(
+                            //           children: [
+                            //             Spacer(
+                            //               flex: 1,
+                            //             ),
+                            //             inputField(context, "", null, null, null),
+                            //             Spacer(),
+                            //             iconContainer(
+                            //                 context,
+                            //                 Text(
+                            //                   'Filter by Date',
+                            //                   style: TextStyle(color: themeColor),
+                            //                 ),
+                            //                 white,
+                            //                 .08,
+                            //                 .05),
+                            //             Spacer(flex: 9),
+                            //             Container(
+                            //               width: MediaQuery.of(context).size.width * .3,
+                            //               child: Row(
+                            //                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            //                 children: [
+                            //                   iconContainer(
+                            //                       context,
+                            //                       Text(
+                            //                         'Copy',
+                            //                         style: TextStyle(color: themeColor),
+                            //                       ),
+                            //                       white,
+                            //                       .07,
+                            //                       .05),
+                            //                   iconContainer(
+                            //                       context,
+                            //                       Text(
+                            //                         'CSV',
+                            //                         style: TextStyle(color: themeColor),
+                            //                       ),
+                            //                       white,
+                            //                       .07,
+                            //                       .05),
+                            //                   iconContainer(
+                            //                       context,
+                            //                       Text(
+                            //                         'Excel',
+                            //                         style: TextStyle(color: themeColor),
+                            //                       ),
+                            //                       white,
+                            //                       .07,
+                            //                       .05),
+                            //                   iconContainer(
+                            //                       context,
+                            //                       Text(
+                            //                         'PDF',
+                            //                         style: TextStyle(color: themeColor),
+                            //                       ),
+                            //                       white,
+                            //                       .07,
+                            //                       .05),
+                            //                 ],
+                            //               ),
+                            //             ),
+                            //             Spacer(),
+                            //           ],
+                            //         ),
+                            //       ),
+                            //     ),
+                            //   ],
+                            // )
+                          ],
+                        ),
+                      ),
+                    ],
                   ),
                 ),
-                SizedBox(
-                  height: MediaQuery.of(context).size.height * 0.33,
-                  width: MediaQuery.of(context).size.width * 0.33,
-                  child: Container(
-                    color: Colors.grey.shade200,
-                    child: Center(
-                        child: RadarChart.light(
-                      ticks: ticks,
-                      features: features,
-                      data: data,
-                      reverseAxis: true,
-                      // useSides: useSides,
-                    )),
-                  ),
-                )
+                // SizedBox(
+                //   height: MediaQuery.of(context).size.height * 0.28,
+                //   width: MediaQuery.of(context).size.width * 0.33,
+                //   child: Container(
+                //     // color: Colors.grey.shade200,
+                //     child: Center(
+                //         child: RadarChart.light(
+                //       ticks: ticks,
+                //       features: features,
+                //       data: data,
+                //       reverseAxis: true,
+                //       // useSides: useSides,
+                //     )),
+                //   ),
+                // )
               ])
             ])));
   }
